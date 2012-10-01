@@ -1,0 +1,43 @@
+# Set C-space as the escape key.
+escape ^@@
+
+# Prefer an audible bell to the visual one.
+vbell off
+
+# Skip the startup message
+startup_message off
+
+# Make the time update every second.
+backtick 1 1 1 date
+
+# Display a caption string below, appearing like tabs and
+# displaying the window number and application name (by default).
+# display the date and time aswell
+caption always
+caption string "%{+b wk}%-w%{+b kg}%n %t%{-}%+w %= %{gk}%D %M %d %Y %c:%s"
+
+# Set the scrollback history to 5000
+defscrollback 5000
+
+# terminfo and termcap for nice 256 color terminal
+# allow bold colors - necessary for some reason
+attrcolor b ".I"
+
+# tell screen how to set colors. AB = background, AF=foreground
+#termcapinfo * 'Co#8:AB=\E[4%dm:AF=\E[3%dm'
+termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+termcapinfo fbterm 'Co#256:AB=\E[2;%d}:AF=\E[1;%d}'
+
+# erase background with current bg color
+defbce "on" 
+altscreen on
+# Set the block timeout to 5 and make screen not wait for reset to redraw the
+# screen.
+defnonblock 5
+nonblock on
+
+# Enable utf-8 and set the locale
+#setenv LC_CTYPE en_US.UTF-8
+#setenv LC_ALL en_US.UTF-8
+#defutf8 on
+#defencoding UTF-8

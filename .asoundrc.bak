@@ -1,0 +1,31 @@
+
+pcm.pulse {
+    type pulse
+    hint {
+        description "PulseAudio Sound Server"
+    }
+}
+
+ctl.pulse {
+    type pulse
+    hint {
+        description "PulseAudio Sound Server"
+    }
+}
+
+# Let's make it the default!
+
+pcm.!default {
+    type pulse
+    hint {
+        description "Default"
+    }
+}
+
+ctl.!default {
+    type pulse
+    hint {
+        description "Default"
+    }
+}
+

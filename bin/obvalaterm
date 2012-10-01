@@ -1,0 +1,27 @@
+#!/bin/bash
+# light
+#valaterm --forecolor=#535353 --backcolor=#ffffff --font="Terminus 10" --opacity=0.90 --palette='#292929:#DE6951:#bcda55:#E2A564:#2187F6:#875C8D:#4390B1:#D2D2D2:#3d3d3d:#c56a47:#9dbf60:#EC8A25:#5495DC:#E41F66:#276CC2:#ffffff'
+
+# dark
+#valaterm --forecolor=#d1d1d1 --backcolor=#171717 --font="Terminus 10" --opacity=0.90 --palette='#292929:#DE6951:#bcda55:#E2A564:#2187F6:#875C8D:#4390B1:#D2D2D2:#3d3d3d:#c56a47:#9dbf60:#EC8A25:#5495DC:#E41F66:#276CC2:#ffffff'
+#valaterm --forecolor=#cccccc --backcolor=#3c3c3c --font="Terminus bold 13" --opacity=0.95 --palette='#292929:#DE6951:#bcda55:#E2A564:#2187F6:#875C8D:#4390B1:#D2D2D2:#3d3d3d:#c56a47:#9dbf60:#EC8A25:#5495DC:#E41F66:#276CC2:#ffffff'
+#valaterm --forecolor=#ffffff --backcolor=#3c3c3c --font="Terminus 12" --opacity=0.95 --palette='#292929:#DE6951:#bcda55:#E2A564:#2187F6:#875C8D:#4390B1:#D2D2D2:#3d3d3d:#c56a47:#9dbf60:#EC8A25:#5495DC:#E41F66:#276CC2:#ffffff'
+#valaterm --forecolor=#ffffff --backcolor=#3c3c3c --font="Droid Sans Mono 11" --opacity=0.95 --palette='#292929:#DE6951:#bcda55:#E2A564:#2187F6:#875C8D:#4390B1:#D2D2D2:#3d3d3d:#c56a47:#9dbf60:#EC8A25:#5495DC:#E41F66:#276CC2:#ffffff'
+#valaterm --forecolor=#ffffff --backcolor=#3c3c3c --font="Droid Sans Mono 11" --opacity=0.95 --palette='#292929:#DE6951:#bcda55:#E2A564:#2187F6:#875C8D:#4390B1:#D2D2D2:#3d3d3d:#c56a47:#9dbf60:#EC8A25:#5495DC:#E41F66:#276CC2:#ffffff'
+#valaterm --forecolor=#292929 --backcolor=#ffffff --font="Droid Sans Mono 11" --opacity=0.95 --palette='#292929:#DE6951:#bcda55:#E2A564:#2187F6:#875C8D:#4390B1:#D2D2D2:#3d3d3d:#c56a47:#9dbf60:#EC8A25:#5495DC:#E41F66:#276CC2:#ffffff'
+
+
+#### dark
+#valaterm --forecolor=#d2d2d2 --backcolor=#3d3d3d --font="Droid Sans Mono 11" --opacity=0.85 --palette='#292929:#DE6951:#bcda55:#E2A564:#2187F6:#875C8D:#4390B1:#D2D2D2:#3d3d3d:#c56a47:#9dbf60:#EC8A25:#5495DC:#E41F66:#276CC2:#ffffff'
+
+#### light
+#valaterm --forecolor=#000000 --backcolor=#f2f2f2 --font="Droid Sans Mono 11" --opacity=0.85 --palette='#292929:#DE6951:#bcda55:#E2A564:#2187F6:#875C8D:#4390B1:#D2D2D2:#3d3d3d:#c56a47:#9dbf60:#EC8A25:#5495DC:#E41F66:#276CC2:#ffffff'
+#valaterm --forecolor=#000000 --backcolor=#f2f2f2 --font="Droid Sans Mono 11" --opacity=0.85 --palette='#292929:#d14e49:#afd13f:#d1b93f:#0076d1:#d14996:#00a0d1:#D2D2D2:#3d3d3d:#f75c57:#cff74a:#f7da4a:#008cf7:#f757b2:#00bef7:#ffffff'
+valaterm --forecolor=#000000 --backcolor=#f2f2f2 --font="Droid Sans Mono 11" --opacity=0.85 --palette='#292929:#DE6951:#a4bf4b:#E2A564:#2187F6:#875C8D:#4390B1:#D2D2D2:#3d3d3d:#c56a47:#9dbf60:#EC8A25:#5495DC:#E41F66:#276CC2:#ffffff'
+
+# dark
+#valaterm --forecolor=#ffffff --backcolor=#5b5b5b --font="Droid Sans Mono 11" --opacity=0.95 --palette='#292929:#DE6951:#bcda55:#E2A564:#2187F6:#875C8D:#4390B1:#D2D2D2:#3d3d3d:#c56a47:#9dbf60:#EC8A25:#5495DC:#E41F66:#276CC2:#ffffff'
+
+#valaterm --forecolor=#ffffff --backcolor=#3c3c3c --font="Droid Sans Mono 11" --opacity=0.95 --palette='#292929:#d14e49:#afd13f:#d1b93f:#0076d1:#d14996:#00a0d1:#D2D2D2:#3d3d3d:#f75c57:#cff74a:#f7da4a:#008cf7:#f757b2:#00bef7:#ffffff'
+#valaterm --forecolor=#ffffff --backcolor=#3c3c3c --font="Droid Sans Mono 11" --opacity=0.95 --palette='#292929:#ff674f:#a7d943:#d9a243:#4387d9:#a943d9:#00bfd9:#D2D2D2:#3d3d3d:#d95743:#c5ff4f:#ffbe4f:#4f9eff:#c64fff:#00e1ff:#ffffff'
+#valaterm --forecolor=#ffffff --backcolor=#3c3c3c --font="Droid Sans Mono 11" --opacity=0.95 --palette='#292929:#d97364:#b2d964:#d9ae64:#4387d9:#9452b2:#30afbf:#D2D2D2:#3d3d3d:#ff8875:#d1ff75:#ffcd75:#4f9eff:#b464d9:#3dd1e5:#ffffff'

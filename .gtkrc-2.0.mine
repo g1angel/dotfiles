@@ -1,0 +1,12 @@
+#gtk-enable-event-sounds = 0
+#gtk-cursor-theme-name="Jimmac"
+#gtk-icon-sizes = "gtk-large-toolbar=16,16:panel-menu=24,24:gtk-button=16,16"
+#gtk-icon-sizes = "panel-menu=16,16:panel=16,16:gtk-menu=16,16:gtk-large-toolbar=16,16:gtk-small-toolbar=16,16:gtk-button=16,16"
+#gtk-toolbar-style = GTK_TOOLBAR_ICONS
+#gtk-toolbar-icon-size = GTK_ICON_SIZE_SMALL_TOOLBAR
+#gtk_color_scheme = "fg_color:#a1a1a1a1a1a1\nbg_color:#3b3b3b3b3b3b\ntext_color:#3b3b3b3b3b3b\nbase_color:#bbbbbbbbbbbb\nselected_fg_color:#47ae33d32546\nselected_bg_color:#54549595DCDC\ntooltip_fg_color:#000000000000\ntooltip_bg_color:#bcbcdada5555"
+#style "murrine-default" {
+    #engine "murrine" {
+        #colorize_scrollbar  = TRUE #FALSE
+    #}
+#}

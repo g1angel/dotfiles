@@ -1,0 +1,334 @@
+/* File: .Xresources/.Xdefaults
+ * Author: Josiah Gordon
+ * Last Modified: April 03, 2012
+ */
+
+! Set the X cursor.
+Xcursor.theme: Jimmac
+
+/* x48 hp48 emulator settings. {{{ */
+x48*connectionFont: fixed
+! }}}
+
+/* Xft settings {{{ */
+Xft.dpi:       96
+Xft.antialias: true
+Xft.hinting:   false
+Xft.hintstyle: none
+Xft.rgba:      none
+! }}}
+
+/* xshogi font settings. {{{ */
+xshogi*font:      -misc-fixed-medium-r-normal--20-200-75-75-c-100-iso8859-1
+XShogi*font:      fixed
+XShogi*coordFont: fixed
+! }}}
+
+/* xterm settings. {{{ */
+xterm*selectToClipboard:    true
+xterm*colorBD:              #ffffff
+xterm*veryBoldColors:      4
+
+/* Setup fonts {{{ */
+!xterm*faceName: Terminus:pixelsize=14
+!xterm*faceName: Droid Sans Mono:pixelsize=15
+! xterm*faceName: DejaVu Sans Mono:pixelsize=15
+xterm*faceName:           xft:Inconsolata:pixelsize=17:antialias=false
+xterm*faceNameDoublesize: xft:MigMix 1M:pixelsize=17:antialias=false
+! xterm*faceNameDoublesize: xft:HanaMinA:pixelsize=17:antialias=false
+! xterm*faceSize: 13
+xterm*geometry:   80x26
+xterm*cursorBlink:  true
+! xterm*font:     -misc-fixed-medium-r-normal--18-120-100-100-c-90-iso10646-1
+! xterm*wideFont: -misc-fixed-medium-r-normal-ja-18-120-100-100-c-180-iso10646-1
+! xterm*font: -misc-fixed-medium-r-normal--20-200-75-75-c-100-iso8859-1
+! xterm*wideFont: fixed
+! xterm*locale: medium
+!xterm*faceSize: 14
+! }}}
+
+/* Make tmux keys work correctly in xterm. {{{ */
+/* Reference: http://www.emacswiki.org/emacs-en/BackspaceKey */
+xterm*ttyModes:             erase ^?
+xterm*VT100*translations:   #override \
+    <Key>BackSpace: string(0x7f)
+xterm*backarrowKeyIsErase:  true
+! }}}
+
+/* Setup utf8 and wide characters (e.g. Japanese) {{{ */
+xterm*eightBitInput:    false
+xterm*utf8:             2
+! xterm*cjkWidth:       true
+! xterm*wideChars:      true
+! xterm*mkWidth:        true
+! }}}
+! }}}
+
+/* urxvt settings {{{ */
+URxvt.buffered:         true
+URxvt.geometry:         200x26
+URxvt.scrollBar:        false
+URxvt.depth:            32
+URxvt.cursorBlink:      true
+URxvt.iconFile:         /usr/share/icons/gnome-colors-common/16x16/apps/terminal.png
+URxvt.borderLess:       true
+! Make normal bold be bright white
+URxvt.colorBD:          #ffffff
+
+/* Setup colors and translucent background {{{ */
+!URxvt.background:       white
+!URxvt.foreground:       black
+!URxvt.cursorColor:      black
+!URxvt.underlineColor:   black
+!URxvt.background:   rgba:c200/c200/c200/cccc
+!URxvt.background:   rgba:3c00/3c00/3c00/eeee
+!URxvt.background:   [85]#c200c200c200
+!URxvt.background:   #edefe3
+! }}}
+
+/* Setup fonts {{{ */
+! URxvt.font:             xft:Terminus:pixelsize=18:antialias=false
+! URxvt.boldFont:         xft:Terminus:bold:pixelsize=18:antialias=false
+! URxvt.font:             xft:Droid Sans Mono:pixelsize=15:antialias=false
+! URxvt.boldFont:         xft:Droid Sans Mono:bold:pixelsize=15:antialias=false
+URxvt.font:             xft:Ricty:pixelsize=17:antialias=false
+URxvt.boldFont:         xft:Ricty:bold:pixelsize=17:antialias=false
+! URxvt.multichar_encoding: ja_JP.EUC-JP
+!URxvt.perl-ext-common:  default,tabbed
+!URxvt.title:            ArchWiki Example
+! }}}
+
+/* Setup clipboard copy/paste shorcuts {{{ */
+URxvt.perl-ext-common:  clipboard
+URxvt.pasteCommand:     xclip -o -selection clipboard
+URxvt.copyCommand:      xclip -i -selection clipboard
+URxvt.keysym.C-S-V:     perl:clipboard:paste
+URxvt.keysym.C-S-C:     perl:clipboard:copy
+! URxvt.keysym.C-S-V: command:xclip -o -sel clipboard
+! URxvt.keysym.C-S-C: command:copy
+! }}}
+! }}}
+
+/* Colorschemes {{{ */
+
+!! Tango~ {{{
+!! Black
+!*color0:  #2E3436
+!*color8:  #555753
+!! Red
+!*color1:  #CC0000
+!*color9:  #EF2929
+!! Green
+!*color2:  #4E9A06
+!*color10: #8AE234
+!! Yellow
+!*color3:  #C4A000
+!*color11: #FCE94F
+!! Blue
+!*color4:  #3465A4
+!*color12: #729FCF
+!! Purple
+!*color5:  #75507B
+!*color13: #AD7FA8
+!! Cyan
+!*color6:  #16989A
+!*color14: #34E2E2
+!! White
+!*color7:  #D3D7CF
+!*color15: #EEEEEC
+! }}}
+
+! sicp colors {{{
+!---------------------------------------------------
+! file:            .colours/sicp
+! author:        marcus lauver <sicpsnake@gmail.com>
+!---------------------------------------------------
+
+*background:                                #3b3b3b
+*foreground:                                #d2d2d2
+!*background:                                #f2f2f2
+!*background:                                #edefe3
+!*foreground:                                #000000
+
+! Black --------------------------------------------
+!        *color0:                            #3b3b3b
+        *color0:                            #292929
+!        *color8:                            #5d5d5d
+        *color8:                            #3d3d3d
+! Red ----------------------------------------------
+        *color1:                            #DE6951
+        *color9:                            #c56a47
+! Green --------------------------------------------
+        *color2:                            #bcda55
+        *color10:                           #9dbf60
+! Yellow -------------------------------------------
+        *color3:                            #E2A564
+        *color11:                           #EC8A25
+! Blue ---------------------------------------------
+        *color4:                            #2187F6
+        *color12:                           #5495DC
+! Magenta ------------------------------------------
+        *color5:                            #875C8D
+        *color13:                           #E41F66
+! Cyan ---------------------------------------------
+        *color6:                            #4390B1
+        *color14:                           #276CC2
+! White --------------------------------------------
+        *color7:                            #d2d2d2
+        *color15:                           #ffffff
+! EOD ---------------------------------------------- }}}
+
+! My colors {{{
+!*background:                                #3c3c3c
+!*foreground:                                #ffffff
+!
+!! Black --------------------------------------------
+!        *color0:                            #292929
+!        *color8:                            #3d3d3d
+!! Red ----------------------------------------------
+!        *color1:                            #d14e49
+!        *color9:                            #f75c57
+!! Green --------------------------------------------
+!        *color2:                            #afd13f
+!        *color10:                           #cff74a
+!! Yellow -------------------------------------------
+!        *color3:                            #d1b93f
+!        *color11:                           #f7da4a
+!! Blue ---------------------------------------------
+!        *color4:                            #0076d1
+!        *color12:                           #008cf7
+!! Magenta ------------------------------------------
+!        *color5:                            #d14996
+!        *color13:                           #f757b2
+!! Cyan ---------------------------------------------
+!        *color6:                            #00a0d1
+!        *color14:                           #00bef7
+!! White --------------------------------------------
+!        *color7:                            #D2D2D2
+!        *color15:                           #ffffff
+!! EOD ---------------------------------------------- }}}
+
+!! My colors 2 {{{
+!*background:                                #3c3c3c
+!*foreground:                                #ffffff
+!
+!! Black --------------------------------------------
+!        *color0:                            #292929
+!        *color8:                            #3d3d3d
+!! Red ----------------------------------------------
+!        *color1:                            #ff674f
+!        *color9:                            #d95743
+!! Green --------------------------------------------
+!        *color2:                            #a7d943
+!        *color10:                           #c5ff4f
+!! Yellow -------------------------------------------
+!        *color3:                            #d9a243
+!        *color11:                           #ffbe4f
+!! Blue ---------------------------------------------
+!        *color4:                            #4387d9
+!        *color12:                           #4f9eff
+!! Magenta ------------------------------------------
+!        *color5:                            #a943d9
+!        *color13:                           #c64fff
+!! Cyan ---------------------------------------------
+!        *color6:                            #00bfd9
+!        *color14:                           #00e1ff
+!! White --------------------------------------------
+!        *color7:                            #D2D2D2
+!        *color15:                           #ffffff
+!! EOD ---------------------------------------------- }}}
+
+! My colors 3 {{{
+!*background:                                #3c3c3c
+!*foreground:                                #ffffff
+!
+!! Black --------------------------------------------
+!        *color0:                            #292929
+!        *color8:                            #3d3d3d
+!! Red ----------------------------------------------
+!        *color1:                            #d97364
+!        *color9:                            #ff8875
+!! Green --------------------------------------------
+!        *color2:                            #b2d964
+!        *color10:                           #d1ff75
+!! Yellow -------------------------------------------
+!        *color3:                            #d9ae64
+!        *color11:                           #ffcd75
+!! Blue ---------------------------------------------
+!        *color4:                            #4387d9
+!        *color12:                           #4f9eff
+!! Magenta ------------------------------------------
+!        *color5:                            #9452b2
+!        *color13:                           #b464d9
+!! Cyan ---------------------------------------------
+!        *color6:                            #30afbf
+!        *color14:                           #3dd1e5
+!! White --------------------------------------------
+!        *color7:                            #D2D2D2
+!        *color15:                           #ffffff
+!! EOD ---------------------------------------------- }}}
+
+!! drop in Solarized colorscheme for Xresources/Xdefaults {{{
+
+!!SOLARIZED HEX     16/8 TERMCOL  XTERM/HEX   L*A*B      RGB         HSB
+!!--------- ------- ---- -------  ----------- ---------- ----------- -----------
+!!base03    #002b36  8/4 brblack  234 #1c1c1c 15 -12 -12   0  43  54 193 100  21
+!!base02    #073642  0/4 black    235 #262626 20 -12 -12   7  54  66 192  90  26
+!!base01    #586e75 10/7 brgreen  240 #585858 45 -07 -07  88 110 117 194  25  46
+!!base00    #657b83 11/7 bryellow 241 #626262 50 -07 -07 101 123 131 195  23  51
+!!base0     #839496 12/6 brblue   244 #808080 60 -06 -03 131 148 150 186  13  59
+!!base1     #93a1a1 14/4 brcyan   245 #8a8a8a 65 -05 -02 147 161 161 180   9  63
+!!base2     #eee8d5  7/7 white    254 #e4e4e4 92 -00  10 238 232 213  44  11  93
+!!base3     #fdf6e3 15/7 brwhite  230 #ffffd7 97  00  10 253 246 227  44  10  99
+!!yellow    #b58900  3/3 yellow   136 #af8700 60  10  65 181 137   0  45 100  71
+!!orange    #cb4b16  9/3 brred    166 #d75f00 50  50  55 203  75  22  18  89  80
+!!red       #dc322f  1/1 red      160 #d70000 50  65  45 220  50  47   1  79  86
+!!magenta   #d33682  5/5 magenta  125 #af005f 50  65 -05 211  54 130 331  74  83
+!!violet    #6c71c4 13/5 brmagenta 61 #5f5faf 50  15 -45 108 113 196 237  45  77
+!!blue      #268bd2  4/4 blue      33 #0087ff 55 -10 -45  38 139 210 205  82  82
+!!cyan      #2aa198  6/6 cyan      37 #00afaf 60 -35 -05  42 161 152 175  74  63
+!!green     #859900  2/2 green     64 #5f8700 60 -20  65 133 153   0  68 100  60
+
+! *background:            #002b36
+! *foreground:            #657b83
+! *fading:                40
+! *fadeColor:             #002b36
+! *cursorColor:           #93a1a1
+! *pointerColorBackground:#586e75
+! *pointerColorForeground:#93a1a1
+! 
+! !! black dark/light
+! *color0:                #073642
+! *color8:                #002b36
+! 
+! !! red dark/light
+! *color1:                #dc322f
+! *color9:                #cb4b16
+! 
+! !! green dark/light
+! *color2:                #859900
+! *color10:               #586e75
+! 
+! !! yellow dark/light
+! *color3:                #b58900
+! *color11:               #657b83
+! 
+! !! blue dark/light
+! *color4:                #268bd2
+! *color12:               #839496
+! 
+! !! magenta dark/light
+! *color5:                #d33682
+! *color13:               #6c71c4
+! 
+! !! cyan dark/light
+! *color6:                #2aa198
+! *color14:               #93a1a1
+! 
+! !! white dark/light
+! *color7:                #eee8d5
+! *color15:               #fdf6e3
+! }}}
+! }}}
+
+! vim: fdm=marker:fdl=0:fmr={{{,}}}

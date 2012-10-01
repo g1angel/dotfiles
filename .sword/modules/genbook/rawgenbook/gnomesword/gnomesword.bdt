@@ -1,0 +1,1656 @@
+<br />
+
+
+<img src="/images/logo.png">
+<p />
+
+
+* 1. Introduction
+<br />
+* 2. Getting Started with <i>GnomeSword</i>
+<br />
+* 3. Interface
+<br />
+* 4. Preferences
+<br />
+* 5. Module Manager
+<br />
+* 6. The Search Function
+<br />
+* 7. The Studypad
+<br />
+* 8. The Personal Commentary
+<br />
+* 9. Authors
+<br />
+* 10. License
+<p />
+
+
+This Sword module is maintained in parallel with the "help/C" subtree
+of the <i>GnomeSword</i> distribution, and current as of
+<i>GnomeSword</i> 2.3.1, October 2007.
+
+
+<br />
+
+
+<i>GnomeSword</i> is a Bible study and research tool based upon the
+"SWORD Project" libraries and the GNOME Desktop libraries. You can use
+<i>GnomeSword</i> to do the following:
+<p />
+
+
+* View your favorite Scripture verse
+<br />
+* Make sermon or personal notes on selected passages
+<br />
+* Automatically follow Bible footnotes and cross-references
+<br />
+* Compare translations in parallel
+<br />
+* Work in original language study using the available Hebrew and Greek translations
+<p />
+
+
+<i>GnomeSword</i> aims to provide a simple and clean user interface
+whilst providing a powerful tool allowing a personalized Bible study
+environment.
+<p />
+
+
+<img src="/images/sword3.png">
+<br />
+
+
+"The SWORD Project" is based at http://www.crosswire.org. Other
+applications under the same banner are <i>The SWORD Project for
+Windows</i> (aka <i>BibleCS</i> or <i>WinSword</i>), <i>MacSword</i>
+for the Macintosh, and <i>BibleTime</i>, another Linux program.
+<p />
+
+
+<i>GnomeSword</i> in action
+<br />
+<img src="/images/interface.png">
+<p />
+
+
+<font size="-1"><i>GnomeSword is currently in development, so this
+manual may not reflect the program as you see it. If it does not,
+please file a bug at the project website, or by email
+&lt;gnomesword-developers@lists.sourceforge.net&gt;.  All help is
+appreciated, as it will improve the software.</i></font>
+
+
+
+
+<br />
+
+
+You can start <i>GnomeSword</i> in the following ways:
+<p />
+
+
+Applications menu:
+<br />
+Choose <b>Accessories -&gt; <i>GnomeSword</i> Bible Study Guide</b>.
+<p />
+
+
+Command line:
+<br />
+Type <b>gnomesword2</b>, then press Return.
+<br />
+
+
+<br />
+
+
+When you start <i>GnomeSword</i> for the first time, <i>GnomeSword</i>
+creates a default selection of options for display. Also, if no other
+Sword application has ever been run, and thus there are no Bible
+modules installed, then <i>GnomeSword</i> asks permission to start the
+Module Manager so that you can select and install a Bible module in
+your language preference.
+<p />
+
+
+<i>GnomeSword</i> Download Question
+<br />
+<img src="/images/first_start.png">
+<p />
+
+
+<i>GnomeSword</i> then opens its interface with one tab displayed,
+showing Romans 8:28.  Once the interface is open, you can use
+<b>Edit -&gt; Preferences</b> to change any of the selections already
+made by default.
+
+
+<br />
+
+
+When you start <i>GnomeSword</i>, the following interface is displayed:
+<p />
+
+
+<i>GnomeSword</i> interface
+<br />
+<img src="/images/interface.png">
+<p />
+
+
+The <i>GnomeSword</i> interface contains the following elements:
+<p />
+
+
+Menubar
+<p />
+
+
+The menus on the menubar contain several commands which extend the use
+of <i>GnomeSword</i>. These include the <b>StudyPad</b> and advanced
+search functions. The menus also help you to customize your use of
+<i>GnomeSword</i>.
+<p />
+
+
+Toolbar
+<p />
+
+
+The <b>toolbar</b> contains buttons that let you quickly navigate
+through the Bible.
+<p />
+
+
+Sidebar
+<p />
+
+
+The <b>Sidebar</b> provides access to several features. It contains
+your bookmarks and the list of installed books. It can also be used to
+perform simple searches.
+<p />
+
+
+Bible Text Pane
+<p />
+
+
+The <b>Bible Text pane</b> displays the Bible text which is currently
+being viewed.
+<p />
+
+
+Viewer
+<p />
+
+
+The <b>Viewer</b> displays Bible text module options. These include
+Strong's numbers, footnotes and morphological tags. It is located
+below the Bible Text Pane.
+<p />
+
+
+Commentary Pane
+<p />
+
+
+The <b>Commentary pane</b> displays commentaries on the current Bible
+Text being used.
+<p />
+
+
+Book Pane
+<p />
+
+
+The <b>Book Pane</b> displays general books available from the Sword
+Project. These include modules like "Calvin's Institutes", "Josephus:
+The Complete Works" etc. This Pane can be accessed via the Book View
+tab just below the Commentary Pane.
+<p />
+
+
+Dictionary/Book Pane
+<p />
+
+
+The <b>Dictionary/Book Pane</b> displays dictionary information on
+selected words in the Bible Text Pane. It is located just below the
+Commentary Pane
+<p />
+
+
+When you right-click in the different interface sections, the
+interface displays a popup menu, which provides access to more
+module-specific options, including printing services.
+
+
+
+
+<br />
+
+
+At the top of the <i>GnomeSword</i> main window is the menubar. Almost
+all of the functions are available by activating the appropriate menu
+item. The functions have been grouped according to their type. For
+example, the file operations have been grouped into the File menu.
+<p />
+
+
+Menubar
+<br />
+<img src="/images/interface_menubar.png">
+
+
+<br />
+
+
+The function of the <b>Toolbar</b> is to provide control over the
+Bible Pane. Activation of the Toolbar option is done by moving the
+mouse cursor over the desired toolbar button and selecting it. A
+tooltip will appear if the mouse cursor is held stationary over a
+toolbar button, describing the function of the button.
+<p />
+
+
+ToolBar
+<br />
+<img src="/images/interface_toolbar.png">
+<p />
+
+
+The <b>Toolbar</b> consists of the following functions:
+<br />
+* History View Toggle
+<br />
+* Bible Book Selector
+<br />
+* Bible Chapter Selector
+<br />
+* Bible Verse Selector
+<br />
+* Bible Passage Summary
+<p />
+
+
+3.2.1. History Forward/Backward Selector
+<p />
+
+
+Switches between current and previous passage selections.
+<p />
+
+
+3.2.2. Bible Book Selector
+<p />
+
+
+Selects the Biblical book to be displayed in the <b>Bible Text
+Pane</b> and <b>Commentary Pane</b>. Changes take immediate effect.
+<p />
+
+
+3.2.3. Bible Chapter Selector
+<p />
+
+
+Selects the Biblical chapter of current book to be displayed in the
+<b>Bible Text Pane</b> and <b>Commentary Pane</b>. Changes take
+immediate effect.
+<p />
+
+
+3.2.4. Bible Verse Selector
+<p />
+
+
+Selects the Biblical verse of current chapter to be displayed in the
+<b>Bible Text Pane</b> and <b>Commentary Pane</b>. Changes take
+immediate effect.
+<p />
+
+
+3.2.5. Bible Passage Summary
+<p />
+
+
+Allows manual editing of passages which are displayed in the <b>Bible
+Text Pane</b> and <b>Commentary Pane</b>. Changes take effect once
+Enter is typed.
+<p />
+
+
+<font size="-1"><i>Ensure that edited book, chapter, and verse naming
+is correct, otherwise the wrong or no information will be
+displayed.</i></font>
+
+
+<br />
+
+
+Sidepane
+<br />
+<img src="/images/interface_sidepane.png">
+<p />
+
+
+On the left hand side of <i>GnomeSword</i> there is the Side
+Pane. Here the user can switch between the different Sword modules,
+view bookmarks, do simple searches and view verse lists. To switch
+between all Side Pane functions, shortcuts have been placed at the
+bottom of the Side Pane. Clicking on the shortcut activates the
+option.
+<p />
+
+
+Sidepane Shortcuts
+<br />
+<img src="/images/interface_shortcut.png">
+<p />
+
+
+<br />
+The Bible Textpane
+<br />
+<img src="/images/interface_biblepane.png">
+<p />
+
+
+Positioned to the right of the Shortcut bar is the Bible text
+pane. All your different translations will be displayed for full
+viewing. When starting <i>GnomeSword</i> either your default Bible
+translation or the translation last used will be displayed.
+<p />
+
+
+3.4.1. Opening A Specific Bible Translation
+<p />
+
+
+In order to change the current Bible translation to another of your
+choice:
+<br />
+* right-click in the <b>Bible Text Pane</b>. In the popup menu choose
+<b>File -&gt; Open Module</b> and select your specific translation
+that you want to view.
+<br />
+* under the <b>Modules</b> option in the <b>Sidebar</b>, choose
+<b>Biblical Texts -&gt; language choice</b> and select your specific
+translation.
+<p />
+
+
+3.4.2. Using the Parallel View Mode
+<p />
+
+
+A nice function in <i>GnomeSword</i> is the ability to view your
+specified bible text in parallel in five translations of your
+choice. The Parallel View mode can be accessed by selecting
+<b>Parallel View</b> just below the <b>Bible Text Pane</b>, next to
+the <b>Standard View</b> tab. Please note that you can only view one
+verse at a time. You can change the verse by selecting another verse,
+chapter, or book at the toolbar. Also note that modules that are Old
+Testament or New Testament only (eg Westminster Leningrad Codex and
+Byzantine Majority Text ) will not be able to display books, chapters,
+or verses that they don't have.
+<p />
+
+
+Bible textpane - parallel view
+<br />
+<img src="/images/interface_parallel.png">
+<p />
+
+
+Additionally, a separate Parallel View window can be selected from the
+right click menu with <b>Detach/Attach</b>. Your Bible pane will
+return to its normal single text view, and the new Parallel View
+window will show the complete chapter, in all 5 translations.
+<p />
+
+
+Parallel View - separate window
+<br />
+<img src="/images/interface_parallel-separate.png">
+<p />
+
+
+3.4.3. Opening A Separate Bible Translation
+<p />
+
+
+In order to view a Bible translation separate from the
+<i>GnomeSword</i> interface:
+<br />
+* Under the <b>Modules</b> option in the <b>Sidebar</b>, choose
+<b>Biblical Texts -&gt; language choice</b>. Then right-click on your
+specific translation and choose the <b>Open in dialog</b> option.
+<p />
+
+
+3.4.4. Finding Out About The Current Translation
+<p />
+
+
+To find out about the Bible translation currently being displayed:
+<br />
+* right-click in the <b>Bible Text pane</b>. In the popup menu choose
+<b>About</b> module name.
+<p />
+
+
+3.4.5. Module Options
+<p />
+
+
+Most Bible translations have additional options which the user can
+select.
+<br />
+* Words Of Christ In Red
+<br />
+* Strong's Numbers
+<br />
+* Morphological Tags
+<br />
+* Footnotes
+<br />
+* Scripture Cross-Reference
+<br />
+* Headings
+<p />
+
+
+<font size="-1"><i>Translations in other languages such as Greek or
+Hebrew have specific options which deal only with the specific
+language.</i></font>
+<p />
+
+
+In order to access these options:
+<br />
+* right-click in the <b>Bible Text pane</b>. In the popup menu
+(example shown), choose <b>Module Options</b> and select the specific
+option.
+<p />
+
+
+Module Options
+<br />
+<img src="/images/interface_biblepane-options.png">
+<p />
+
+
+3.4.6. View Options
+<p />
+
+
+There are several additional modes that can be selected from the
+menubar's <b>View</b> pulldown.
+<p />
+
+
+View Options
+<br />
+<img src="/images/interface_menubar-view.png">
+<p />
+
+
+* Verse Style - Toggles between Bible text display in separate verses,
+or in paragraphs instead. This is set on a per-module basis.
+<br />
+* Pin Tabs - When more than one tab is open, each one's verse is
+navigated separately in the disabled case. If tab pinning is enabled,
+then all tabs navigate together, keeping all translations on the same
+verse.
+<br />
+* Read Aloud - If you enable this, then <i>GnomeSword</i> will funnel
+all selected verses through the <i>festival</i> text-to-speech
+system. <i>Festival</i> is a widely-available TTS, often installed by
+default in Linux distributions.
+<br />
+* Show Verse Numbers - Normally enabled, this toggle can be disabled
+to prevent display of verse numbers within the text.
+<br />
+*  Highlight Current Verse - Initially disabled, this toggle replaces
+mere alternate colorization of the current verse with a substitute
+high-contrast highlight. The colors used may be selected from the
+Preferences dialog.
+<p />
+
+
+3.4.7. Specific Word Meanings
+<p />
+
+
+In order to check the meaning of a specific word, click on the desired
+word you wish to lookup. The word should then highlight itself and the
+explanation should be displayed, if available, in the <b>Dictionary
+Pane</b>.
+<p />
+
+
+3.4.8. Finding A Specific Word
+<p />
+
+
+To find a specific word within a passage:
+<br />
+* right-click in the <b>Bible Text Pane</b>. In the popup menu, choose
+<b>Edit-&gt; Find</b>. A separate dialog will appear, which will allow
+single or multi word searches. Fill out dialog and click the
+<b>Find</b> button.
+
+
+<br />
+Viewer Panel
+<br />
+<img src="/images/interface_viewer.png">
+<p />
+
+
+The Viewer Pane is where the user sees Strong's numbers, morphological
+tags, footnotes, and cross-references that the <b>Bible Text Pane</b>
+provides.
+<p />
+
+
+Footnote content is normally transient in the Viewer Pane: It is
+displayed while your mouse hovers over the footnote indicator
+<b>*n</b> in the Bible text, and then disappears when your mouse moves
+off. But some translations' footnotes (e.g. NET Bible's) can be very
+large, so that not all the text is visible. To anchor the text so that
+you can scroll it in the Viewer Pane, middle-click the indicator and
+move to the Viewer Pane.
+<p />
+
+
+Cross-reference indicators <b>*x</b> also display transiently in the
+Viewer Pane. Left-clicking the indicator will send the set of
+references to the <b>Verse List</b> in the <b>Sidebar</b>, where you
+can click them individually for reading in the Viewer Pane.
+
+
+<br />
+The Commentary Pane
+<br />
+<img src="/images/interface_commentarypane.png">
+<p />
+
+
+The <b>Commentary pane</b> is where the commentary modules are
+displayed. This provides easy reading, reference and access to
+different commentaries currently installed. The passage viewed by the
+<b>Commentary pane</b> is directly controlled by the current passage
+viewed in the <b>Bible Text pane</b>, so in order to change to a
+different passage commentary, select the desired passage on the
+<b>Toolbar</b>.
+<p />
+
+
+If there are images that are part of a commentary, general book, or
+dictionary/lexicon, they may be clicked to invoke a viewer on that
+single image, in order to get a better view.  This is particularly
+useful if image resizing has been enabled with the result that images
+are made very small in the subwindow.  (This feature requires
+underlying Sword support beyond its 1.5.9 public release, at revision
+"SVN 2035" or later.)
+<p />
+
+
+Also, mouse-selected text may be read aloud from Bibles, commentaries,
+and general books, using the right-click menu.
+<p />
+
+
+<font size="-1"><i>By changing to passage settings on the Toolbar, the
+contents in the Bible Text pane and the Commentary Pane will be
+changed.</i></font>
+<p />
+
+
+3.6.1. Finding Out About The Commentary Module
+<p />
+
+
+To find out about the commentary currently being displayed:
+<br />
+* right-click in the <b>Commentary Pane</b>. In the popup menu choose
+<b>About</b> module name.
+<p />
+
+
+3.6.2. Commentary Headings.
+<p />
+
+
+Most commentaries have additional headings which enable introductory
+information about the book and chapter currently being displayed in
+the Bible Text pane. In order to view them:
+<br />
+* right-click in the <b>Commentary Pane</b>. In the popup menu choose
+<b>Display Book Heading</b> or <b>Display Chapter Heading</b>.
+
+
+<br />
+The Dictionary Pane
+<br />
+<img src="/images/interface_dictionary.png">
+
+
+<br />
+Several keyboard shortcuts exist in <i>GnomeSword</i>:
+<p />
+
+
+* <b>Ctrl-L</b> focuses and selects the main verse navbar text. You
+can then immediately type in new verse selection text. Be aware that
+<i>GnomeSword</i>, as is the case with most Sword applications,
+understands many abbreviations: "G" is adequate to specify Genesis,
+for example, and any book name by itself implies 1:1.
+<br />
+* <b>Ctrl-F</b> opens the "Find" dialog for the Bible pane.
+<br />
+* <b>Alt-C</b> brings the Commentary View forward when previously
+obscured by the Book View.
+<br />
+* <b>Alt-G</b> is the opposite of Alt-C, focusing on the general book.
+<br />
+* <b>Alt-B</b> opens a bookmark dialog on the current verse.
+<br />
+* <b>Alt-D</b> focuses on the dictionary navbar text.
+<br />
+* <b>Alt-P</b> detaches/re-attaches the parallel view dialog.
+
+
+<br />
+The <i>GnomeSword</i> interface has evolved over time, and there are
+two display libraries with which <i>GnomeSword</i> can be built.  The
+older, less featureful version is called "gtkhtml3", and the newer,
+more capable version is called "MozEmbed".  Both of these display
+libraries render text in a browser-like fashion, using HTML constructs
+to control display.
+<p />
+
+
+Several desirable capabilities are unsupportable in gtkhtml3, and
+although recent <i>GnomeSword</i> is written to take advantage of
+MozEmbed features, it is possible that the version running on your
+computer needed to be built with gtkhtml3 instead, either because the
+version of MozEmbed available for your system is not recent enough to
+support the needs of <i>GnomeSword</i>, or it simply doesn't exist
+for your system.  (Notably, Cygwin has no MozEmbed at all.)  The
+following differences will be apparent, depending on whether gtkhtml3
+or MozEmbed is the underlying display engine:
+<p />
+
+
+* Morphology and Strong's references, enabled via the right-click menu
+in some modules, are displayed inline with gtkhtml3; with MozEmbed, a
+blocked display is used, where these references are aligned beneath
+the word to which they refer, for a much more readable, less cluttered
+display.
+<br />
+* Footnote and cross-reference markers (<b>*n</b>, <b>*x</b>) are
+displayed as proper superscripts in MozEmbed, but not in gtkhtml3.
+<br />
+* Links in gtkhtml3 are necessarily both colored and underlined; in
+MozEmbed, no underlines are needed.
+<br />
+* Under MozEmbed, double-space display is available using the
+<b>View</b> menu, but not under gtkhtml3.
+<p />
+
+
+Using the "About <i>GnomeSword</i>" selection under the <b>Help</b>
+menu, you will see the display library with which <i>GnomeSword</i>
+was built.
+
+
+<p />
+Comparison, gtkhtml3 -vs- mozembed
+<br />
+<img src="/images/gtkhtml3-vs-mozembed.png">
+
+
+
+
+<br />
+The Preference Dialog
+<br />
+<img src="/images/preferences.png">
+
+
+<br />
+4.2.1. Setting Font Colors
+<p />
+
+
+Font Colour Settings
+<br />
+<img src="/images/preferences_fonts-color.png">
+<p />
+
+
+4.2.2. Miscellaneous Font Settings
+<p />
+
+
+Miscellaneous Font Settings
+<br />
+<img src="/images/preferences_fonts-misc.png">
+<p />
+
+
+In individual modules' display, the right-click menu's <b>Module
+Options</b> selector provides font name and size selection.
+<p />
+
+
+The base font size is the size initially chosen for all modules
+displayed by <i>GnomeSword</i> .  The verse number and individual modules'
+font size choices are relative to the base font size.
+
+
+<br />
+4.3.1. Tabs and Pane Settings
+<p />
+
+
+Tab and Pane Settings
+<br />
+<img src="/images/preferences_general-tabs.png">
+<p />
+
+
+4.3.2. General Preferences and StudyPad directory
+<p />
+
+
+General Preferences and StudyPad directory
+<br />
+<img src="/images/preferences_general-misc.png">
+<p />
+
+
+<b>Verse style</b> indicates that each verse should begin on a
+separate line, or (when disabled) that verses should be allowed to
+group in paragraphs, according to the Bible module's internal
+markup. Not all Bible modules have such markup.
+<p />
+
+
+With <b>Scroll to Previous/Next Chapter</b> enabled, using the mouse
+to scroll to the beginning or end of a chapter will cause <i>GnomeSword</i>
+to move automatically to the appropriate chapter.
+<p />
+
+
+If you enable <b>Resize images</b>, <i>GnomeSword</i> will automatically
+resize image content in commentaries, general books, and dictionaries
+so as to fit the subwindow which contains them.
+<p />
+
+
+<b>Highlight current verse</b>, if enabled, will cause <i>GnomeSword</i> to
+substitute mere current verse colorization with a high-contrast
+alternate color scheme on the current verse. The colors used may be
+chosen from the color selector pane (see above).
+
+
+<br />
+4.4.1. Main Module Settings
+<p />
+
+
+The Module Preferences Dialog
+<br />
+<img src="/images/preferences_modules-main.png">
+<p />
+
+
+Parallel Preferences
+<br />
+<img src="/images/preferences_modules-parallel.png">
+<p />
+
+
+Various preferences Modules
+<br />
+<img src="/images/preferences_modules-misc.png">
+
+
+
+
+<br />
+
+
+The "module" is the unit of content in <i>GnomeSword</i>, and Sword
+generally; a Sword module is a resource available for viewing in Sword
+applications. There are several varieties: Most importantly, Bible
+texts, as well as dictionaries and lexicons, commentaries, and general
+books, including some which have graphical content (e.g. atlases).
+They are installed either from a local directory structure (such as a
+CDROM distribution) or remotely via ftp from a server such as
+Crosswire, which is the home of Sword, and from which all officially
+Sword-sanctioned modules are available.  <p />
+
+
+If you have other Sword applications installed, they will all share
+the same set of Sword modules that you install through the Module
+Manager.
+<p />
+
+
+The Module Manager Dialog
+<br />
+<img src="/images/module.png">
+
+
+<br />
+5.2.1. Sword Sources Settings
+<p />
+
+
+Sword Sources Settings
+<br />
+<img src="/images/sword_sources.png">
+<p />
+
+
+There are other repositories available besides Crosswire's own, though
+the modules available from other repositories do not represent content
+officially sanctioned by Crosswire.  On the web, see this page for
+list of those repositories known:
+<b>http://www.crosswire.org/wiki/index.php/Module_Repositories</b>
+<p />
+
+
+5.2.2. Sword Module Installations
+<p />
+
+
+Sword Module Installations
+<br />
+<img src="/images/sword_config.png">
+<p />
+
+
+After you have selected your Install Source, click the <b>Refresh</b>
+button to cause <i>GnomeSword</i> to find the module summary available
+from that source before moving on.
+<p />
+
+
+Take note of the "Install Destination."  Normal usage of Sword Project
+tools in Linux/UNIX environments includes one's personal area, under
+~/.sword, plus a shared system-wide area readable by all users.  If
+the user does not have write access to the system area, that selection
+will be greyed-out and unavailable.
+<p />
+
+
+There have been some requests for <i>GnomeSword</i> to provide a means
+by which an ordinary (non-root) user could start the program, gain
+temporary write access to the system area while installing modules,
+and then revoke that access after installation is complete.
+Attempting to devise a scheme to do this has proven quite difficult,
+given the different superuser management schemes employed by various
+Linux distributions.  Therefore, at this time there are no ongoing
+plans to try to solve this problem, and users are advised to enable
+write access to the system area outside <i>GnomeSword</i>.
+<p />
+
+
+<br />
+5.3.1. Adding and Updating Sword Modules
+<br />
+<img src="/images/sword_install.png">
+<p />
+
+
+Modules that are already installed have a checkmark beside them.  If a
+fast search ("lucene") index is available, an open book is displayed,
+otherwise an "X" is shown; creation of the index is available on the
+Maintenance pane.  Locked modules, which require that you purchase an
+unlock key from the module's copyright holder, will show a lock
+symbol.
+<p />
+
+
+Select new modules to be installed by clicking the checkboxes and then
+the Install button at the bottom.  Any number of modules may be
+requested for installation at one time.  If there are modules
+installed for which a more recent version is available, a refresh icon
+will appear between the differing old and new version stamps.
+<p />
+
+
+5.3.2. Module Maintenance
+
+
+<br />
+<img src="/images/sword_remove.png">
+<p />
+
+
+Several maintenance functions are available: Removal, archival, index,
+and index deletion.
+<p />
+
+
+Removal disposes of a module entirely.  There is no recovery of the
+module unless you have previously archived a copy of it.
+<p />
+
+
+Archival is available for any module, although it is provided with
+personal commentaries specifically in mind.  A *.zip of the module is
+left in the directory ~/.sword/zip.  Archival prior to removal of
+personal commentaries is recommended, in order to be available for
+future re-install if the subject matter of the personal commentary
+becomes important again.
+<p />
+
+
+Indexing is provided so that the underlying Sword search support can
+create the index needed for the "lucene" multi-word fast-search
+functions.  If the index is not created, multi-word search will still
+be available, but it will be much slower.  With the index in place,
+searches through an entire Bible can take just a few seconds.
+<p />
+
+
+Indexes may be deleted as well.
+<p />
+
+
+<br />
+
+
+Some resource modules in Sword Project format are available from
+sources other than Crosswire. Necessarily, installing such a module is
+a manual task.
+<p />
+
+
+Modules are normally packaged as *.zip files; they contain a
+configuration file plus a number of data files. Installation of such a
+module is done by cd'ing to your personal Sword (not
+<i>GnomeSword</i>) configuration directory, ~/.sword, and unzipping
+the file there. The configuration file will be left in "mods.d", and
+the module's data files will go into a subdirectory of
+"modules". Alternatively, if you have write access to the system Sword
+directory, typically /usr/share/sword, you may cd there instead before
+unzipping.
+<p />
+
+
+Restart <i>GnomeSword</i> after installing such a module, so that a
+fresh instance of the program can notice the new module in place.
+
+
+
+
+<br />
+
+
+To conduct a quick search within the current module the 'Search Bar'
+in the 'Side Pane' should usually be absolutely adequate. Click either
+in the menu bar <b>Edit-&gt;Search</b> or in the 'Side Pane'
+<b>Modules -&gt;Search</b> to access it.
+<p />
+
+
+The Search Bar
+<br />
+<img src="/images/interface_searchpane.png">
+<p />
+
+
+The <b>Search Dialog</b> consists of the following parts:
+<br />
+* Search Key Entry box
+<br />
+* Search Module Selector
+<br />
+* Search Type Selector
+<br />
+* Search Options Checkbox
+<br />
+* Search Scope Selector
+<p />
+
+
+6.1.1. Search Key Entry Box
+<p />
+
+
+Allows entry of the key for which you would like to search. The search
+key can be a word, part of a word, several words, a phrase, or a
+regular expression depending on the type of search selected. When the
+search key is entered and all other selections in the search dialog
+are complete, click the Find button to begin the search.
+<p />
+
+
+This search uses the optimized search method (see next section) if
+the module has previously been indexed, so bear in mind the additional
+syntax required to do multi-word searches (e.g. +FirstWord +SecondWord).
+<p />
+
+
+6.1.2. Search Module Selector
+<p />
+
+
+Allows selection of which modules you would like to search. Select
+<b>Bible</b> to search Bible versions or <b>Commentary</b> to search
+commentaries. Only the currently active module will be searched.
+<p />
+
+
+6.1.3. Search Type Selector
+<p />
+
+
+Allows selection of the type of search. There are three search types
+available:
+<p />
+
+
+<b>Multi word</b>
+<br />
+This type will match any verse that has all the words in the search
+key, regardless of where they appear in the verse.
+<p />
+
+
+<b>Regular expression</b>
+<br />
+This search uses a regular expression as a search key. A regular
+expression is a pattern used to match a string of text. A regular
+expression can be used to find verses with words that match a
+particular pattern. For example the regular expression
+<b>A[a-z]*iah</b> will match verses that contain the words Aiah,
+Ahaziah, Athaliah and Amariah.
+<p />
+
+
+A complete discussion of regular expressions is beyond the scope of
+this manual, but more information can be found in the grep man page.
+<p />
+
+
+<b>Exact phrase</b>
+<br />
+This type will match the search key exatly as entered. If the search
+key is it is good, this search would match a verse which contains
+"<u>it is good</u>," but would not match a verse which contains "good,
+and doeth it not, to him it is sin."
+<p />
+
+
+6.1.4. Search Options Checkbox
+<p />
+
+
+Allows selecting of search options. The only available option is
+<b>Match case</b>. Check this box to make the search case sensitive.
+<p />
+
+
+6.1.5. Search Scope Selector
+<p />
+
+
+Allows defining the range within the specificed module that will be
+searched. There are three search scopes available:
+<p />
+
+
+<b>No scope</b>
+<br />
+This button causes the search to to include the entire module.
+<p />
+
+
+<b>Use bounds</b>
+<br />
+Selecting this button produces two dropdown selector boxes marked
+<b>Lower</b> and <b>Upper</b>. Select the first book to search in the
+<b>Lower</b> box and the last book to search in the <b>Upper</b>
+box. The search will begin with the <b>Lower</b> book and end with the
+<b>Upper</b> book and include all books in between.
+<p />
+
+
+Chapter and verse numbers can be entered into the search bound boxes
+as well to further narrow the search.
+<p />
+
+
+<b>Last search</b>
+<br />
+Select this button to do a new search including only the verses
+returned as a result of the last search. Use this with a new search
+key to narrow the search further.
+
+
+<br />
+
+
+More complicated searches might require the use of the advanced search
+functions, found under <b>Edit-&gt;Advanced Search</b>.
+<p />
+
+
+The Advanced Search Dialogue
+<br />
+<img src="/images/search_search.png">
+<p />
+
+
+In <b>Advanced Search</b>, much more complex queries can be
+constructed, involving custom search ranges, custom lists of modules
+over which to search, regular expression matching (see next section),
+and attribute-based searches such as are found in footnotes or
+Strong's Hebrew and Greek dictionary references.
+<p />
+
+
+The default search is multi-word, a somewhat slow and blunt search
+through module text.  Also available is an optimized search based on
+the Lucene indexing and search library.  A web search will provide
+several references to the syntax needed to put to use the power of an
+optimized Lucene search.  In order to use the optimized search, the
+index must be constructed beforehand: Please see the preceding section
+on the Module Manager regarding the Maintenance functions, including
+indexing.
+<p />
+
+
+By default, two standard search ranges are defined, for Old and New
+Testament; you may wish to define others for e.g. "Gospels" or "Paul's
+Epistles".  One (fake) custom module list is present, as a placeholder
+to make obvious what is required: Since it cannot be known what
+modules a user will install, no real content for such a module list
+can be assumed.  If desired, new searches can be performed across only
+the current results of the previous search.  Any modules may be
+searched, including general books and even dictionaries, in any
+combination.
+<p />
+
+
+Note the tooltip in the screenshot above, for Attributes search.  This
+qualifier is used to perform searches on attributes that are carried
+with verses, instead of verse content proper, such as footnote content
+or Strong's Hebrew and Greek references.  If this button is selected,
+specific attribute qualifiers must be made in the Attribute Search
+tab, at the right end of the tab set.  Strong's references are
+identified with a leading "H" or "G" and the numeric Strong's
+identifier.  Thus, a search of KJV for Strong's Greek #140, using
+"G140", will return the single result of Matthew 12:18.
+<p />
+
+
+<font size="-1"><i>Changes to some of the settings (e.g. scope of
+search, searched modules, etc.) in Advanced Search will affect the
+simple search via the side pane but not vice versa.</i></font>
+
+
+<br />
+
+
+Regular expression searches provide a way to do simple or complex
+searches for strings that match a pattern or set of patterns
+(branches) separated by vertical bars "|". While a pattern can be
+built to look for a word or phrase, a simple pattern that consists of
+a word does not look for only that word but for any place the string
+of letters that make that word are found. A search for "right" will
+return verses that contain the word "right", but also "righteous",
+"righteousness", "unrighteous", "upright" and even "bright". A search
+for "hall not" is not a search for "hall" AND "not" but for the string
+"hall not" with a space between the second "l" and the "n". The search
+for "hall not" will find occurrences of "shall not".
+<p />
+
+
+The power of Regular Expressions is in the patterns (or templates)
+used to define a search. A pattern consists of ordinary characters and
+some special characters that are used and interpreted by a set of
+rules. Special characters include .\[^*$?+. Ordinary (or simple)
+characters are any characters that are not special. The backslash,
+"\", is used to convert special characters to ordinary and ordinary
+characters to special.
+<p />
+
+
+Example: the pattern "i. love\." will find sentences that end with
+"his love" or "in love" or "is love" followed by a period. The first
+period in "i. love\." is a special character that means allow any
+character in this position. The backslash in "i. love\." means that
+the period following it is not to be considered a special character,
+but is an ordinary period.
+<p />
+
+
+6.3.1. Rules for Regular Expression Search Requests
+<p />
+
+
+* . The period matches any character. See Details
+<br />
+* * The asterisk matches 0 or more characters of the preceding: set,
+character or indicated character.
+<br />
+* + The plus sign matches 1 or more characters of the preceding: set,
+character or indicated character.
+<br />
+* ? The question mark matches 0 or 1 character of the preceding: set,
+character or indicated character.
+<br />
+* [ ] Square brackets match any one of the characters specified inside [ ].
+<br />
+* ^ A caret as the first character inside [ ] means NOT.
+<br />
+* ^ A caret beginning a pattern anchors the beginning of a line.
+<br />
+* $ A dollar at the end of a pattern anchors the end of a line.
+<br />
+* | A vertical bar means logical OR.
+<br />
+* ( ) Parentheses enclose expressions for grouping. Not supported!
+<br />
+* \ A backslash can be used prior to any special character to match
+that character.
+<br />
+* \ A backslash can be used prior to an ordinary character to make it
+a special character.
+
+
+6.3.1.1. The Period
+<p />
+
+
+The Period "." will match any single character even a space or other
+non-alphabet character. s.t matches sit, set, sot, etc., which could
+be located in sitting, compasseth and sottish b..t matches boot, boat
+and beat foot.tool matches footstool and foot tool.
+<p />
+
+
+6.3.1.2. The Asterisk
+<p />
+
+
+The asterisk "*" matches zero or more characters of the preceding:
+set, character or indicated character. Using a period asterisk
+combination ".*" after a commonly found pattern can cause the search
+to take a very long time, making the program seem to freeze. be*n
+matches beeen, been, ben, and bn which could locate Reuben and
+Shebna.
+<p />
+
+
+6.3.1.3. The Plus Sign
+<p />
+
+
+The Plus Sign "+" matches one or more characters of the preceding:
+set, character or indicated character. Using a period and plus sign
+combination ".+" after a commonly found pattern can cause the search
+to take a very long time, making the program seem to freeze. be+n
+matches beeen, been and ben, but not bn.
+<p />
+
+
+6.3.1.4. The Question Mark
+<p />
+
+
+The Question Mark "?"matches zero or one character of the preceding:
+set, character or indicated character. be?n matches ben and bn but not
+been. trees? matches trees or tree.
+<p />
+
+
+6.3.1.5. The Square Brackets
+<p />
+
+
+The Square Brackets "[]" enclose a set of characters that can
+match. The period, asterisk, plus sign and question mark are not
+special inside the brackets. A minus sign can be used to indicate a
+range. If you want a caret "^" to be part of the range do not place it
+first after the left bracket or it will be a special character. To
+include a "]" in the set make it the first (or second after a special
+"^") character in the set. To include a minus sign in the set make it
+the first (or second after a special "^") or last character in the
+set. s[eia]t matches set, sit, and sat, but not sot. s[eia]+t matches
+as above but also, seat, seet, siet, etc. [a-d] matches a, b, c, or
+d. [A-Z] matches any uppercase letter. [.;:?!] matches ., ;, :, ?, or
+! but not a comma. [ ]^-] matches ] or ^ or -.
+<p />
+
+
+6.3.1.6. The Caret first in Square Brackets
+<p />
+
+
+If the Caret is the first character after the left bracket ("[^") it
+means NOT. s[^io]t matches set, sat, etc., but not sit and sot.
+<p />
+
+
+6.3.1.7. The Caret as Start of Line Anchor
+<p />
+
+
+If the Caret is the first character in a pattern ("^xxx") it anchors
+the pattern to the start of a line. Any match must be at the beginning
+of a line. Because of unfiltered formatting characters in some texts,
+this feature does not always work, but may if a few periods are placed
+after the caret to account for the formatting characters. ^In the
+beginning matches lines that start with "In the beginning". (May need
+to use: ^.....In the beginning)
+<p />
+
+
+6.3.1.8. The Dollar Sign as End of Line Anchor
+<p />
+
+
+If the Dollar Sign is the last character ("xxx$") in a pattern it
+anchors the pattern to the end of a line. Any match must be at the end
+of a line. Because of unfiltered formatting characters in some texts,
+this feature does not always work, but may if a few periods are placed
+before the dollar sign to account for the formatting
+characters. Amen\.$ matches lines that end with "Amen." (May need to
+use Amen\....$, Amen\..........$, or even Amen\....................$)
+<p />
+
+
+6.3.1.9. The Vertical Bar
+<p />
+
+
+The Vertical Bar "|" between patterns means OR. John|Peter matches
+John or Peter. John .*Peter|Peter .*John matches John ... Peter or
+Peter ... John. (.* slows a search) pain|suffering|sorrow matches
+pain, or suffering, or sorrow.
+<p />
+
+
+6.3.1.10. The Parentheses
+<p />
+
+
+The use of Parentheses "( )" is not supported!
+<p />
+
+
+6.3.1.11. The Backslash Prior to a Special Character
+<p />
+
+
+The Backslash prior to a special character ("\*") indicates that the
+character is not being used in its special meaning, but is just to
+match itself. amen\. matches amen. but not ament and will not locate
+firmament.
+<p />
+
+
+6.3.1.12. The Backslash Prior to an Ordinary Character
+<p />
+
+
+The Backslash prior to an ordinary character ("\o") indicates that the
+character is not being used to match itself, but has special meaning.
+<p />
+
+
+* \b if use outside [ ] means word boundary. If used inside [ ] means
+backspace. \brighteous\b matches righteous but not unrighteous or
+righteousness
+<br />
+* \B means non-word boundary. \Brighteous\B matches unrighteousness
+and unrighteously but not righteous, unrighteous or righteousness.
+<br />
+* \d means digit; same as [0-9].
+<br />
+* \D means non-digit, same as [^0-9].
+<br />
+* \s means space.
+<br />
+* \S means not a space.
+<br />
+* \w means alphanumeric; same as [a-zA-Z0-9_].
+<br />
+* \W means not alphanumeric; same as [^a-zA-Z0-9_].
+<p />
+
+
+<br />
+
+
+The Studypad can be opened by choosing <b>File-&gt;Open Studypad</b>.
+<p />
+
+
+This is what the Studypad typically looks like:
+<p />
+
+
+The Studypad
+<br />
+<img src="/images/studypad.png">
+<p />
+
+
+The Studypad will save into your working directory, making it useful
+for collecting and exporting information and Bible study material from
+<i>GnomeSword</i> into other programmes.
+<p />
+
+
+Toolbar 1
+<br />
+* Font Size and Environment
+<br />
+* Font Type
+<br />
+* Bold, Italics, Underscored, Crossed Out
+<br />
+* Left, Centre and Right Bound
+<br />
+* Shift Paragraph Right or Left
+<br />
+* Colour Selector
+<p />
+
+
+Toolbar 2
+<br />
+* New, Save, Delete and Print
+<br />
+* Cut, Copy, Paste and Undo
+<br />
+* Find and 'Find and Replace'
+<br />
+* Spellcheck
+<p />
+
+
+In order for spellcheck to be available, one of the languages under
+<b>Edit-&gt;Current Languages</b> must be set.
+<p />
+
+
+<br />
+
+
+To build up a personal commentary you will need to install the
+editable 'Personal' sword module from the English Commentaries
+section. Right click it and choose <b>Edit-&gt;Note-&gt;Personal</b>
+in the pop-up menus.
+<p />
+
+
+An editor window similar to the <b>Study Pad</b> will appear. Edit
+your comment and save it, in future it will appear as your comment to
+the relevant verse.
+<p />
+
+
+The Personal Commentary Editor
+<br />
+<img src="/images/personal.png">
+<p />
+
+
+Locationbar
+<br />
+* Synchronise Button
+<br />
+* Bible Book, Chapter and Verse Selectors
+<br />
+* Location Summary
+<p />
+
+
+Use the <b>Synchronise Button</b> to quickly change location of your
+editor to that of the underlying Bibletext or use the <b>Book</b>,
+<b>Chapter</b> and <b>Verse selectors</b> to choose to edit your
+comment to one particular verse.
+<p />
+
+
+Toolbar 1
+<br />
+* Font Size and Environment
+<br />
+* Font Type
+<br />
+* Bold, Italics, Underscored, Crossed Out
+<br />
+* Left, Centre and Right Bound
+<br />
+* Shift Paragraph Right or Left
+<br />
+* Colour Selector
+
+
+Toolbar 2
+<br />
+* Save, Delete and Print
+<br />
+* Cut, Copy, Paste and Undo
+<br />
+* Find and 'Find and Replace'
+<br />
+* Spellcheck
+<p />
+
+
+In order for spellcheck to be available, one of the languages under
+<b>Edit-&gt;Current Languages</b> must be set.
+<p />
+
+
+To create a link to other verses right click the text and choose
+<b>Link...</b> In the pop-up window enter the link location and the
+module linked to.
+<p />
+
+
+It is possible to rename a personal commentary to suit a
+particular subject of study for that commentary.  Thus,
+multiple personal commentaries may be installed: Rename the
+existing personal commentary, and then re-install another
+instance of the personal commentary if desired.  Personal
+commentary names can consist only of letters and digits, and
+cannot duplicate an existing module's name.  Rename is
+accessible off the right-click menu.
+<p />
+
+
+If the study embodied in a particular personal commentary is
+no longer needed, archival is available in the module manager,
+prior to removal, for possible future re-installation.  See
+the module manager's Remove/Archive page.  Any module may be
+archived, not just personal commentaries.
+<p />
+
+
+Although there are 31,102 verses in standard versification, it
+is unlikely that more than a tiny fraction of all verses will
+have personal commentary attached to them.  A verse list
+showing where personal commentary notes exist is available
+from the right-click menu.
+<p />
+
+
+<font size="-1"><i>The created commentary page will be attached to an
+individual verse only. To write commentary pages from within the
+<i>GnomeSword</i>, attached to longer stretches of text use the
+<b>Link..</b> function to link several pages together.</i></font>
+
+
+<br />
+
+
+This manual was written by:
+<br />
+* Andy Piper
+<br />
+* Pierre Benz
+<br />
+* Dr Peter von Kaehne
+<br />
+* Karl Kleinpaste
+<br />
+* Dominique Corbex
+<p />
+
+
+Please send all comments and suggestions regarding this manual to
+<i>GnomeSword</i> Development list
+<gnomesword-developers@lists.sourceforge.net>. Comments may also be
+submitted via the project trackers at SourceForge.
+<p />
+
+
+For more information on <i>GnomeSword</i>, please visit the project
+website at http://gnomesword.sf.net. Bug reports should be made using
+the Bug Tracker at the project development site
+http://www.sourceforge.net/projects/gnomesword
+
+
+<br />
+
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or (at
+your option) any later version.
+<p />
+
+
+This program is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the ~GNU
+General Public License~ for more details.
+<p />
+
+
+A copy of the "GNU General Public License" is included as an appendix
+to the "GNOME Users Guide". You may also obtain a copy of the "GNU
+General Public License" from the Free Software Foundation by visiting
+their Web site or by writing to Free Software Foundation, Inc. 59
+Temple Place - Suite 330 Boston, MA 02111-1307 USA
+

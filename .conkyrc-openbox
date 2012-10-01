@@ -1,0 +1,111 @@
+# maintain spacing between certain elements
+use_spacer left
+pad_percents 3
+
+# set to yes if you want conky to be forked in the background
+background no
+own_window_hints undecorated,above,skip_taskbar,sticky
+#own_window_hints undecorated,below,skip_taskbar,sticky
+
+use_xft yes
+
+# Xft font when Xft is enabled
+#xftfont Terminus:size=8
+
+#xftfont Droid Sans Mono-8
+#xftfont Bitstream Vera Sans Mono-8
+xftfont DejaVu Sans Mono-8
+#xftfont Andale Mono-9
+#xftfont Clean-8
+#xftfont cubicfive10:pixelsize=8
+#xftfont squaredance10:pixelsize=14
+#xftfont swf!t_v02:pixelsize=10
+
+# Text alpha when using Xft
+#xftalpha 0.2
+#mail_spool $MAIL
+
+# Update interval in seconds
+update_interval 1.0
+
+# Create own window instead of using desktop (required in nautilus)
+own_window yes
+
+# Use double buffering (reduces flicker, may not work for everyone)
+double_buffer yes
+
+# Minimum size of text area
+#minimum_size 1250 5
+minimum_size 1600 #1000
+#default_bar_size 1600 0
+
+# Draw shades?
+draw_shades no #yes
+
+# Draw outlines?
+draw_outline no # amplifies text
+
+# Draw borders around text
+draw_borders no #yes
+draw_graph_borders no
+
+# Stippled borders?
+stippled_borders 0
+
+# border margins
+#border_margin 0
+
+#draw_graph_borders no
+# border width
+border_width 0
+
+# Default colors and also border colors, grey90 == #e5e5e5
+#default_color 004499 #grey90
+#default_color 404040 #004499 #grey90
+default_color ffffff #004499 #grey90
+#default_shade_color bebebe
+#default_shade_color 323232 #525252
+default_shade_color 3c3c3c #525252
+##727171
+#default_outline_color DarkGrey
+default_outline_color bcda55
+
+own_window_transparent no
+own_window_argb_visual no #yes
+#own_window_argb_value 180
+#own_window_type dock
+
+own_window_type desktop
+#own_window_colour fbf8f1
+own_window_colour 0c0c0c #525252
+# Text alignment, other possible values are commented
+#alignment top_left
+#alignment top_middle
+alignment top_right
+#alignment bottom_left
+#alignment bottom_right
+
+# Gap between borders of screen and text
+#gap_x -24
+#gap_y 24
+#gap_y 30
+#gap_x 31
+gap_y 2
+
+# Subtract file system buffers from used memory?
+no_buffers yes
+
+# set to yes if you want all text to be in uppercase
+uppercase no
+
+# stuff after 'TEXT' will be formatted on screen
+ #${alignr 40}${color #000000}| ${time %a %h %d, %T}
+TEXT
+${offset 250}${color #ffffff}CPU ${color #4387d9}${cpugraph 10, 25} ${color #4f9eff}$cpu% ${color #ffffff} MEM ${color #b2d964}${memgraph 10, 25} ${color #d1ff75}$memperc% ${color #ffffff} LOAD ${color #d97364}${loadgraph 10, 25} ${color #ff8875}${loadavg 2} ${color #ffffff} SWAP ${color #9452b2}${swapbar 10, 25} ${color #b464d9}$swapperc% ${color #ffffff} DISK READ ${color #d9ae64}${diskiograph_read 10, 25}  $diskio_read ${goto 830} ${color #ffffff} DISK WRITE ${color #ffcd75}${diskiograph_write 10, 25}  $diskio_write  ${goto 1010} ${color #ffffff} eth0 UP ${color #30afbf}${upspeedgraph eth0 10, 25} ${tail .conkyfiles/bwup 1 1} ${goto 1180} ${color #ffffff} eth0 DOWN ${color #3dd1e5}${downspeedgraph eth0 10, 25} ${tail .conkyfiles/bwdown 1 1} 
+#${alignr 110}${color #ffffff} ${execi 30 todate.sh world} ${alignr 145}${color #ffffff} 
+#${execi 30 todate.sh time}
+#${offset 130}${color #ffffff}CPU ${color #5494dc}${cpugraph 10, 25} ${color #2187f6}$cpu% ${color #ffffff}MEM ${color #9dbf60}${memgraph 10, 25} ${color #bcda55}$memperc% ${color #ffffff} LOAD ${color #c56a47}${loadgraph 10, 25} ${color #de6951}${loadavg 2} ${color #ffffff} SWAP ${color #875c8d}${swapbar 10, 25} ${color #875c8d}$swapperc% ${color #ffffff} DISK READ  ${color #ec8a25}${diskiograph_read 10, 25}  $diskio_read ${goto 660} ${color #ffffff} DISK WRITE ${color #e2a564}${diskiograph_write 10, 25}  $diskio_write  ${goto 830} ${color #ffffff} eth0 UP   ${color #276cc2}${upspeedgraph eth0 10, 25} ${tail .conkyfiles/bwup 1 1} ${goto 980} ${color #ffffff} eth0 DOWN ${color #4390ff}${downspeedgraph eth0 10, 25} ${tail .conkyfiles/bwdown 1 1} ${alignr 155}${color #ffffff} ${execi 30 todate.sh world} ${alignr 150}${color #ffffff} ${execi 30 todate.sh time}
+#${color #c2c2c2}CPU ${color #005282}${cpugraph 10, 25} ${color #00b2f2}$cpu% ${color #c2c2c2} LOAD ${color #840000}${loadgraph 10, 25} ${color #f40000}${loadavg 2} ${color #c2c2c2} Top CPU: ${color #00b2f2}${top name 1} ${top pid 1} ${top cpu 1} ${top mem 1} ${color #c2c2c2} DISK READ  ${color #f59000}${diskiograph_read 10, 25}  $diskio_read ${color #c2c2c2} eth0 UP   ${color #00dff2}${upspeedgraph eth0 10, 25} ${tail .conkyfiles/bwup 1 1} ${alignr 8}${color #c2c2c2} ${execi 30 todate.sh world}
+#${color #c2c2c2}MEM ${color #006203}${memgraph 10, 25} ${color #00e28b}$memperc% ${color #c2c2c2} SWAP ${color #5a0082}${swapbar 10, 25} ${color #ffaaff}$swapperc% ${color #c2c2c2} Top MEM: ${color #00e28b}${top_mem name 1} ${top_mem pid 1} ${top_mem cpu 1} ${top_mem mem 1} ${color #c2c2c2} DISK WRITE ${color #ffb700}${diskiograph_write 10, 25}  $diskio_write ${color #c2c2c2} eth0 DOWN ${color #00e7ea}${downspeedgraph eth0 10, 25} ${tail .conkyfiles/bwdown 1 1} ${alignr 38}${color #c2c2c2} ${execi 30 todate.sh time}
+#${offset 280}${color #ffffff}CPU ${color #5494dc}${cpugraph 10, 25} ${color #2187f6}$cpu% ${color #ffffff} LOAD ${color #c56a47}${loadgraph 10, 25} ${color #de6951}${loadavg 2} ${color #ffffff} Top CPU: ${color #2187f6}${top name 1} ${top pid 1} ${top cpu 1} ${top mem 1} ${color #ffffff} DISK READ  ${color #ec8a25}${diskiograph_read 10, 25}  $diskio_read ${goto 900} ${color #ffffff} eth0 UP   ${color #276cc2}${upspeedgraph eth0 10, 25} ${tail .conkyfiles/bwup 1 1} ${alignr 370}${color #ffffff} ${execi 30 todate.sh world}
+#${offset 280}${color #ffffff}MEM ${color #9dbf60}${memgraph 10, 25} ${color #bcda55}$memperc% ${color #ffffff} SWAP ${color #875c8d}${swapbar 10, 25} ${color #875c8d}$swapperc% ${color #ffffff} Top MEM: ${color #bcda55}${top_mem name 1} ${top_mem pid 1} ${top_mem cpu 1} ${top_mem mem 1} ${color #ffffff} DISK WRITE ${color #e2a564}${diskiograph_write 10, 25}  $diskio_write  ${goto 900} ${color #ffffff} eth0 DOWN ${color #4390ff}${downspeedgraph eth0 10, 25} ${tail .conkyfiles/bwdown 1 1} ${alignr 400}${color #ffffff} ${execi 30 todate.sh time}

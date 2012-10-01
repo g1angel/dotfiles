@@ -1,0 +1,15 @@
+# Ignore everything
+*
+# Except these
+!gtk-3.0
+!nitrogen
+!fbpanel
+!feh
+!.gitignore
+!openbox
+!webbrowser
+!luakit
+!tint2
+!jumanji
+!dwb
+!htop

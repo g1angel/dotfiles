@@ -1,0 +1,6 @@
+[ui]
+username = Josiah Gordon <josiahg@gmail.com>
+[extensions]
+hgk =
+[web]
+cacerts = /etc/ssl/certs/ca-certificates.crt

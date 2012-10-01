@@ -1,0 +1,4 @@
+# Include everything
+!*
+# Except ...
+history

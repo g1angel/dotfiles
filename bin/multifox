@@ -1,0 +1,13 @@
+#!/bin/bash
+
+function multifox()
+{
+    FIREFOX_TMP_DIR="$(dirname $(mktemp -u))/firefox-$USER"
+    if [ ! -d  $FIREFOX_TMP_DIR ]
+    then
+        mkdir -p $FIREFOX_TMP_DIR
+    fi
+    TMPDIR=$FIREFOX_TMP_DIR $($(which firefox) "$@")
+}
+
+multifox "$@"

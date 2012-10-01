@@ -1,0 +1,92 @@
+# maintain spacing between certain elements
+use_spacer left
+
+# set to yes if you want conky to be forked in the background
+background no
+own_window_hints undecorated,above,skip_taskbar,sticky
+#own_window_hints undecorated,below,skip_taskbar,sticky
+
+use_xft yes
+
+# Xft font when Xft is enabled
+#xftfont Terminus:size=8
+
+xftfont Bitstream Vera Sans Mono-8
+#xftfont DejaVu Sans Mono-8
+#xftfont Andale Mono-9
+#xftfont Clean-8
+#xftfont cubicfive10:pixelsize=8
+#xftfont squaredance10:pixelsize=14
+#xftfont swf!t_v02:pixelsize=10
+
+# Text alpha when using Xft
+#xftalpha 0.2
+#mail_spool $MAIL
+
+# Update interval in seconds
+update_interval 1.0
+
+# Create own window instead of using desktop (required in nautilus)
+own_window yes
+
+# Use double buffering (reduces flicker, may not work for everyone)
+double_buffer yes
+
+# Minimum size of text area
+minimum_size 1600 5 
+#1250 5
+
+# Draw shades?
+draw_shades yes
+
+# Draw outlines?
+draw_outline no # amplifies text
+
+# Draw borders around text
+draw_borders no
+
+# Stippled borders?
+stippled_borders 0
+
+# border margins
+border_margin 0
+
+# border width
+border_width 0
+
+# Default colors and also border colors, grey90 == #e5e5e5
+default_color grey90
+default_shade_color bebebe
+##727171
+default_outline_color DarkGrey
+
+#own_window_transparent yes
+#own_window_type dock
+
+own_window_type desktop
+own_window_colour fbf8f1
+# Text alignment, other possible values are commented
+alignment top_left
+#alignment top_middle
+#alignment top_right
+#alignment bottom_left
+#alignment bottom_right
+
+# Gap between borders of screen and text
+#gap_x -24
+#gap_y 24
+#gap_y 30
+gap_x 31
+gap_y 0
+
+# Subtract file system buffers from used memory?
+no_buffers yes
+
+# set to yes if you want all text to be in uppercase
+uppercase no
+
+# stuff after 'TEXT' will be formatted on screen
+ #${alignr 40}${color #000000}| ${time %a %h %d, %T}
+TEXT
+ ${color #000000}| CPU ${color #0072b2}${cpugraph 10, 25} $cpu% ${color #000000}| LOAD ${color #d40000}${loadgraph 10, 25} ${loadavg 2} ${color #000000}| CPU Fan:${color #0072b2} ${i2c 0-002d fan 1} RPM ${color #000000}| CPU Temp:${color #0072b2} ${i2c 0-002d temp 2}°C ${color #000000}| Top CPU: ${color #0072b2}${top name 1} ${top pid 1} ${top cpu 1} ${top mem 1} ${color #000000}| DISK READ  ${color #c55000}${diskiograph_read 10, 25}  $diskio_read ${color #000000}| eth0 UP   ${color #00afb2}${upspeedgraph eth0 10, 25} ${tail .conkyfiles/bwup 1 1} ${alignr 4}${color #000000}| ${execi 30 todate.sh world}
+ ${color #000000}| MEM ${color #00b25b}${memgraph 10, 25} $memperc% ${color #000000}| SWAP ${color #8a00c2}${swapbar 10, 25} $swapperc% ${color #000000}| PSU Fan:${color #f99f2d} ${i2c 0-002d fan 3} RPM ${color #000000}| M/B Temp:${color #f99f2d} ${i2c 0-002d temp 1}°C ${color #000000}| Top MEM: ${color #00b25b}${top_mem name 1} ${top_mem pid 1} ${top_mem cpu 1} ${top_mem mem 1} ${color #000000}| DISK WRITE ${color #fe6700}${diskiograph_write 10, 25}  $diskio_write ${color #000000}| eth0 DOWN ${color #00b7ba}${downspeedgraph eth0 10, 25} ${tail .conkyfiles/bwdown 1 1} ${alignr 34}${color #000000}| ${execi 30 todate.sh time}

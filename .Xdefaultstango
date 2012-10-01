@@ -1,0 +1,152 @@
+Xterm*geometry: 80x55
+Emacs.FontBackend: xft
+Emacs.font: Consolas-9
+Xft.dpi: 96
+Xft.hinting: slight
+
+!  -------------   URXVT------------------
+urxvt*background:        rgba:0000/0000/0000/cccc
+urxvt*foreground:        #c8c8c8
+urxvt*depth: 24
+urxvt*inheritPixmap: true
+urxvt*termName: rxvt-unicode
+urxvt*colorMode: on
+urxvt*scrollBar: false
+urxvt*scrollstyle: plain
+!urxvt*cutchars: `&#39;&quot;,;@&amp;*=|?()&lt;&gt;[]{}
+urxvt*mouseWheelScrollPage: true 
+urxvt*saveLines: 1000
+urxvt*urlLauncher: firefox
+urxvt*underlineColor:   #86a2be
+urxvt*cursorBlink: false
+urxvt*geometry: 80x55
+urxvt*shading: 25
+urxvt*font:              xft:Consolas:size=8
+! URxvt*font:              -*-profont-*-*-*-*-11-*-*-*-*-*-iso8859-1
+! URxvt*boldFont:          -*-profont-*-*-*-*-11-*-*-*-*-*-iso8859-1
+! urxvt*font: -*-profont-*-*-*-*-11-*-*-*-*-*-iso8859-*
+! urxvt*boldFont: -*-profont-*-*-*-*-11-*-*-*-*-*-iso8859-*
+urxvt*transparent: true
+urxvt*borderLess: true
+!urxvt*externalBorder:0
+urxvt*internalBorder:2
+!urxvt*borderColor:0
+!urxvt.skipBuiltinGlyphs:true
+urxvt.intensityStyles:    true
+
+! !Gamma~
+! ! Colours
+! !URxvt*foreground:       #BBBBBB
+! URxvt*foreground:       #FFFFFF
+! URxvt*background:       #191919
+! 
+! URxvt*colorBD:          #EEEEEF
+! 
+! ! Black
+! URxvt*color0:           #404040
+! !URxvt*color8:           #252525
+! 
+! ! Red
+! URxvt*color1:           #C12121
+! URxvt*color9:           #E50E0E
+! 
+! ! Green
+! URxvt*color2:           #75BD00
+! URxvt*color10:          #89b83f
+! 
+! ! Yellow
+! URxvt*color3:           #EDD76A
+! URxvt*color11:          #efef60
+! 
+! ! Blue
+! URxvt*color4:           #4F6FAE
+! URxvt*color12:          #3F6FD0
+! 
+! ! Magenta
+! URxvt*color5:           #706c9a
+! URxvt*color13:          #826ab1
+! 
+! ! Cyan
+! URxvt*color6:           #508695
+! URxvt*color14:          #a1cdcd
+! 
+! ! White
+! URxvt*color7:           #BBBBBB
+! URxvt*color15:          #EEEEEF
+
+!Tango~
+! Black
+*color0:  #2E3436
+*color8:  #555753
+! Red
+*color1:  #CC0000
+*color9:  #EF2929
+! Green
+*color2:  #4E9A06
+*color10: #8AE234
+! Yellow
+*color3:  #C4A000
+*color11: #FCE94F
+! Blue
+*color4:  #3465A4
+*color12: #729FCF
+! Purple
+*color5:  #75507B
+*color13: #AD7FA8
+! Cyan
+*color6:  #06989A
+*color14: #34E2E2
+! White
+*color7:  #D3D7CF
+*color15: #EEEEEC
+
+urxvt*perl-ext-common:      default,matcher
+urxvt*matcher.button:       1
+urxvt*matcher.pattern.1:    \bwww\.[\w-]\.[\w./?&amp;@#-]*[\w/-]
+urxvt*urlLauncher:        firefox
+urxvt*perl-lib: /usr/lib/urxvt/perl/
+
+
+! ========== X CALC============= 
+xcalc*geometry: 200x275
+xcalc.ti.bevel.background: #111111
+xcalc.ti.bevel.screen.background: #000000
+xcalc.ti.bevel.screen.DEG.background: #000000
+xcalc.ti.bevel.screen.DEG.foreground: LightSeaGreen
+xcalc.ti.bevel.screen.GRAD.background: #000000
+xcalc.ti.bevel.screen.GRAD.foreground: LightSeaGreen
+xcalc.ti.bevel.screen.RAD.background: #000000
+xcalc.ti.bevel.screen.RAD.foreground: LightSeaGreen
+xcalc.ti.bevel.screen.INV.background: #000000
+xcalc.ti.bevel.screen.INV.foreground: Red
+xcalc.ti.bevel.screen.LCD.background: #000000
+xcalc.ti.bevel.screen.LCD.foreground: LightSeaGreen
+xcalc.ti.bevel.screen.LCD.shadowWidth: 0
+xcalc.ti.bevel.screen.M.background: #000000
+xcalc.ti.bevel.screen.M.foreground: LightSeaGreen
+xcalc.ti.bevel.screen.P.background: #000000
+xcalc.ti.bevel.screen.P.foreground: Yellow
+xcalc.ti.Command.foreground: White
+xcalc.ti.Command.background: #777777
+xcalc.ti.button5.background: Orange3
+xcalc.ti.button19.background: #611161
+xcalc.ti.button18.background: #611161
+xcalc.ti.button20.background: #611111
+xcalc.ti.button25.background: #722222
+xcalc.ti.button30.background: #833333
+xcalc.ti.button35.background: #944444
+xcalc.ti.button40.background: #a55555
+xcalc.ti.button22.background: #222262
+xcalc.ti.button23.background: #222262
+xcalc.ti.button24.background: #222272
+xcalc.ti.button27.background: #333373
+xcalc.ti.button28.background: #333373
+xcalc.ti.button29.background: #333373
+xcalc.ti.button32.background: #444484
+xcalc.ti.button33.background: #444484
+xcalc.ti.button34.background: #444484
+xcalc.ti.button37.background: #555595
+xcalc.ti.button38.background: #555595
+xcalc.ti.button39.background: #555595
+XCalc*Cursor:                 hand2
+XCalc*ShapeStyle:             rectangle

@@ -1,0 +1,39 @@
+html, body, tbody, tr, td, div { background-color: #3c3c3c !important; color: #d2d2d2 !important }
+/*.pun * { background-color: #3c3c3c !important; color: #d2d2d2 !important }*/
+* { background-color: #3c3c3c !important; color: #d2d2d2 !important }
+pre {
+  display: block !important ; 
+  background-color: #3c3c3c !important ;
+  border: #777777 solid 0.1em !important ;
+  color: #eeeeee !important ;
+  font-family: "courier" !important ;
+  margin:  1em 2em 2em 1.3em !important ;
+  overflow: auto !important ;
+  padding: 0.5em 2em 1em 1em !important ;
+  text-align: left !important ;
+  white-space: pre !important ;
+  font-family: "courier" !important ;
+}
+
+/* defaults for all links */
+a:link { color: #5495dc !important } 
+/*a:visited { color: #e2a564 !important } */
+a:visited { color: #875c8d !important } 
+/*a:active { font-weight: bold !important }*/
+a:hover { color: #9dbf60 !important }
+/* google highlight */
+em { color: #2187f6 !important } 
+/*em:link:hover { color: #bcda55 !important } */
+/*em:link:visited { color: #ec8a25 !important } */
+/*h1, h2, h3, h4, h5 { background-color: #3c3c3c ; color: #d2d2d2 !important }*/
+/*span.pre { background-color: #3c3c3c ; color: #d2d2d2 !important }*/
+/*body { background: none #3c3c3c !important }*/
+* { border-color: #555555 !important }
+/*#archnavbarlogo { background: url('https://bbs.archlinux.org/style/ArchLinux/archlogo.png') no-repeat !important; }*/
+div.navigation,
+div.navigation i,
+table#attachment_table th,
+span.bz_first_comment_head,
+span.bz_comment_head { color: #797979 !important ; background-color: #191919 !important }
+span.quote { color: #9F9450 !important }
+

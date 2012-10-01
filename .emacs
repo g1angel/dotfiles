@@ -1,0 +1,5 @@
+;(load "dictionary-init")
+(global-set-key "\C-cs" 'dictionary-search)
+(global-set-key "\C-cm" 'dictionary-match-words)
+(require 'w3m-load)
+;(require 'mime-w3m)

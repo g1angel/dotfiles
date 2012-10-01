@@ -1,0 +1,42 @@
+#!/bin/sh
+#
+# Construct new Sword module from Jens Grebner's Strong's Hebrew.
+# http://www.walljm.com/misc/heb_strongs.zip
+# (100 entries per file in heb*.xml.)
+#
+cat heb{?,??}.xml |
+tr -d '\r' |
+sed -e '/^<?xml [^>]\+.$/d' \
+    -e '/^<dictionary /d' \
+    -e '/^	<\/item>$/d' \
+    -e 's;	<item id="H\([0-9]\+\)">;$$$\1;' \
+    -e 's;^		<strong_id>H\([0-9]\+\)</strong_id>$;<a name="\1"><b>\1</b></a><br />;' \
+    -e 's;^		<title>\(.\+\)</title>$;\1<br />;' \
+    -e 's;^		<transliteration>\(.\+\)</transliteration>$;[\1];' \
+    -e '/^		<\/\?pronunciation>$/d' \
+    -e 's;^			<em>\([^<]\+\)</em>$;\\<i>\1</i>\\<br />;g' \
+    -e 's;^		<description>\(.\+\)</description>$;\1;' \
+    -e 's;<\(/\)\?em>;<\1i>;g' \
+    -e 's;<\(/\)\?strong>;<\1b>;g' \
+    -e 's|<sup>\([^<]\+\)</sup>|<sup><font size="-1"><i>\1</i></font></sup>|g' \
+    -e 's;<link target="H[0-9]\+">H\([0-9]\+\)</link>;<a href="sword://StrongsRealHebrew/\1">\1</a>;g' \
+    -e 's;<br/> \?;<br />;g' \
+    -e 's;\(href="sword://StrongsReal\(Greek\|Hebrew\)/\|name="\)\([0-9]\)";\10\3";g' \
+    -e 's;\(href="sword://StrongsReal\(Greek\|Hebrew\)/\|name="\)\([0-9][0-9]\)";\10\3";g' \
+    -e 's;\(href="sword://StrongsReal\(Greek\|Hebrew\)/\|name="\)\([0-9][0-9][0-9]\)";\10\3";g' \
+    -e 's;\(href="sword://StrongsReal\(Greek\|Hebrew\)/\|name="\)\([0-9][0-9][0-9][0-9]\)";\10\3";g' \
+    -e 's;^[	 ]*;;g' \
+    -e '/^ *$/d' \
+    -e 's;$; ;' \
+    -e '/^\$\$\$/s; $;;' \
+    -e 's;^\$\$\$\([0-9]\)$;$$$0\1;' \
+    -e 's;^\$\$\$\([0-9][0-9]\)$;$$$0\1;' \
+    -e 's;^\$\$\$\([0-9][0-9][0-9]\)$;$$$0\1;' \
+    -e 's;^\$\$\$\([0-9][0-9][0-9][0-9]\)$;$$$0\1;' \
+    > strongsrealhebrew.imp
+imp2ld strongsrealhebrew.imp
+# demented.  imp2ld cuts off output file basename at 16 chars.  stupid.
+mv strongsrealhebre.dat strongsrealhebrew.dat
+mv strongsrealhebre.idx strongsrealhebrew.idx
+chmod go+r strongsrealhebrew.dat strongsrealhebrew.idx
+exit 0

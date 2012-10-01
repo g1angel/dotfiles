@@ -1,0 +1,21 @@
+#!/bin/sh
+
+FIFO="/tmp/dvtm-status.$$"
+
+[ -e "$FIFO" ] || mkfifo "$FIFO"
+chmod 600 $FIFO
+
+while true; do
+	date +"%a %h %d, %T"
+	sleep 1
+done > $FIFO &
+
+STATUS_PID=$!
+if [[ $TERM =~ 'rxvt|xterm' ]] 
+then
+    TERM=rxvt-256color dvtm -h 8096 -s $FIFO "$@" 2> /dev/null
+else
+    dvtm -h 8096 -s $FIFO "$@" 2> /dev/null
+fi
+kill $STATUS_PID
+rm $FIFO

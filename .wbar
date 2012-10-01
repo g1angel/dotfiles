@@ -1,0 +1,12 @@
+i: /usr/share/pixmaps/wbar/osxbarback.png
+c: wbar --bpress --above-desk --vbar --nofont --pos right --isize 32 --idist 5 --nanim 4 --falfa 65
+t: /usr/share/fonts/TTF/DroidSansMono/10
+
+i: /usr/share/pixmaps/wbar/wbar.png
+c: wbar-config
+t: Config
+
+i: /usr/share/pixmaps/wbar/gimp.png
+c: gimp
+t: Gimp
+

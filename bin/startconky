@@ -1,0 +1,10 @@
+#!/bin/bash
+
+pushd ~
+bwmon_file.sh -i eth0 -p ~/.conkyfiles/ -b &
+until [[ -e ~/.conkyfiles/bwup ]]
+do
+    sleep 1
+done
+conky -d -c "$1" #~/.conkyrc-lxde
+popd

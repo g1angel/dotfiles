@@ -1,0 +1,13 @@
+[Settings]
+animateProgressBar=false
+checkMarkColor=#000000
+customCheckMarkColor=false
+customFocusHighlightColor=false
+customOverHighlightColor=false
+drawToolBarItemSeparator=true
+drawToolBarSeparator=false
+drawTriangularExpander=true
+focusHighlightColor=#000000
+inputFocusHighlight=true
+overHighlightColor=#000000
+

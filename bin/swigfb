@@ -1,0 +1,2 @@
+#!/bin/bash
+wine $HOME/bin/swg/swig.exe -freebasic -I$HOME/bin/swg $1

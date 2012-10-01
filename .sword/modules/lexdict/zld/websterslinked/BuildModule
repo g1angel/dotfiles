@@ -1,0 +1,9 @@
+#!/bin/sh -x
+#
+# Auto-edit WebstersDict into WebstersLinked
+#
+mod2imp WebstersDict |
+sed -e 's;\(<u>\([^<]*\)</u>\);<a href="sword://WebstersLinked/\2">\1</a>;g' |
+imp2ld /dev/stdin websterslinked z
+chmod go+r websterslinked*
+exit 0
