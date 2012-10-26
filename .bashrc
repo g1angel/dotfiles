@@ -34,14 +34,19 @@ BASH_DIR=$HOME/.bashrc.d
 # Load user defined functions
 source $BASH_DIR/functions.sh
 
-# Setup the terminal colors
-setup_colors
+# Only set colors if where not root.
+if [[ $UID != 0 ]]; then
+    # Setup the terminal colors
+    setup_colors
 
-# Setup the prompt
-#PS1='[\u@\h \W]\$ '
-PS1='\[\e[0;32m\][\u@\h \W]\$\[\e[0m\] '
-# PS1='\[\e[0;33m\]┌[\[\e[0;32m\]\u@\H \[\e[1;34m\]\w\[\e[0;33m\]]\n└\[\e[0;32m\]\$\[\e[0m\] '
-# PS1='\[\e[0;33m\]┌[\[\e[0;32m\]\u@\H \[\e[1;34m\]\w \[\e[0;36m\]$(__git_ps1 "git (%s)")\[\e[0;33m\]]\n└\[\e[0;32m\]\$\[\e[0m\] '
+    # Setup the prompt
+    #PS1='[\u@\h \W]\$ '
+    PS1='\[\e[0;32m\][\u@\h \W]\$\[\e[0m\] '
+    # PS1='\[\e[0;33m\]┌[\[\e[0;32m\]\u@\H \[\e[1;34m\]\w\[\e[0;33m\]]\n└\[\e[0;32m\]\$\[\e[0m\] '
+    # PS1='\[\e[0;33m\]┌[\[\e[0;32m\]\u@\H \[\e[1;34m\]\w \[\e[0;36m\]$(__git_ps1 "git (%s)")\[\e[0;33m\]]\n└\[\e[0;32m\]\$\[\e[0m\] '
+else
+    PS1='\[\e[0;31m\][\u@\h \W]\$\[\e[0m\] '
+fi
 #}}}
 
 ### Set environment variables #{{{
