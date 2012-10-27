@@ -18,4 +18,10 @@ exec numlockx &
 exec tint2 &
 #exec python /usr/share/system-config-printer/applet.py &
 #exec volwheel &
-exec startconky ~/.conkyrc-openbox &
+res=$(xrandr |sed 's/.*current \([[:digit:]]* x [[:digit:]]*\),.*$/\1/gp' -n)
+if [[ $res == '1920 x 1080' ]]; then
+    conkyrc=~/.conkyrc-openbox-wide
+else
+    conkyrc=~/.conkyrc-openbox
+fi
+exec startconky $conkyrc &

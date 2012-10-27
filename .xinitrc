@@ -34,6 +34,6 @@ case "$1" in
         nitrogen --restore &
         numlockx &
         exec ck-launch-session dbus-launch --sh-syntax --exit-with-session subtle ;;
-    *) exec ck-launch-session dbus-launch --sh-syntax --exit-with-session openbox-session ;;
+    *) exec dbus-launch --sh-syntax --exit-with-session openbox-session ;;
     #*) exec ck-launch-session dbus-launch --sh-syntax --exit-with-session twindy ;;
 esac

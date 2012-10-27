@@ -703,7 +703,7 @@
     <application class="URxvt">
       <position>
         <x>center</x>
-        <y>678</y>
+        <y>-0</y>
       </position>
       <maximized>Horizontal</maximized>
       <decor>no</decor>
