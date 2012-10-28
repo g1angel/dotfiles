@@ -679,7 +679,7 @@
     <application name="valaterm" class="Valaterm">
       <position>
         <x>center</x>
-        <y>680</y>
+        <y>-0</y>
       </position>
       <maximized>Horizontal</maximized>
       <decor>no</decor>
@@ -687,7 +687,7 @@
     <application name="svalaterm" class="Svalaterm">
       <position>
         <x>center</x>
-        <y>680</y>
+        <y>-0</y>
       </position>
       <maximized>Horizontal</maximized>
       <decor>no</decor>
@@ -695,7 +695,7 @@
     <application class="XTerm">
       <position>
         <x>center</x>
-        <y>678</y>
+        <y>-0</y>
       </position>
       <maximized>Horizontal</maximized>
       <decor>no</decor>
