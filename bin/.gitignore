@@ -1,2 +1,4 @@
 # Include everything
 !*
+# except binaries
+valaterm
