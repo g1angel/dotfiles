@@ -95,6 +95,18 @@
       <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
+    <font place="ActiveOnScreenDisplay">
+      <name>Sans</name>
+      <size>8</size>
+      <weight></weight>
+      <slant></slant>
+    </font>
+    <font place="InactiveOnScreenDisplay">
+      <name>Sans</name>
+      <size>8</size>
+      <weight></weight>
+      <slant></slant>
+    </font>
   </theme>
   <desktops>
     <!-- this stuff is only used at startup, pagers allow you to change them
@@ -278,19 +290,19 @@
     </keybind>
     <!--keybindings for LXPanel -->
     <!--<keybind key="W-r">-->
-      <!--<action name="Execute">-->
-        <!--<command>lxpanelctl run</command>-->
-      <!--</action>-->
+    <!--<action name="Execute">-->
+    <!--<command>lxpanelctl run</command>-->
+    <!--</action>-->
     <!--</keybind>-->
     <!--<keybind key="A-F2">-->
-      <!--<action name="Execute">-->
-        <!--<command>lxpanelctl run</command>-->
-      <!--</action>-->
+    <!--<action name="Execute">-->
+    <!--<command>lxpanelctl run</command>-->
+    <!--</action>-->
     <!--</keybind>-->
     <!--<keybind key="A-F1">-->
-      <!--<action name="Execute">-->
-        <!--<command>lxpanelctl menu</command>-->
-      <!--</action>-->
+    <!--<action name="Execute">-->
+    <!--<command>lxpanelctl menu</command>-->
+    <!--</action>-->
     <!--</keybind>-->
     <keybind key="C-A-c">
       <action name="Execute">
@@ -669,8 +681,8 @@
   </menu>
   <applications>
     <!--<application name="lxterminal" class="Lxterminal">-->
-      <!--<maximized>Horizontal</maximized>-->
-      <!--<size>80x25</size>-->
+    <!--<maximized>Horizontal</maximized>-->
+    <!--<size>80x25</size>-->
     <!--</application>-->
     <application name="Blender" class="Blender">
       <maximized>true</maximized>
