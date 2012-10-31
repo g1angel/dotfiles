@@ -19,6 +19,9 @@ xset -dpms
 # Turn on keyrepeat
 xset r rate 245 30
 
+# Turn off screen blanking
+xset s off
+
 # Setup uim input support
 #export GTK_IM_MODULE='uim'
 #export QT_IM_MODULE='uim'

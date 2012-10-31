@@ -937,7 +937,7 @@ function xdg_default()
     local arg=
 
     # Usage message.
-    local usage="Usage: xdg_set_default <-m mime-type|-f file-to-open> -a handler.desktop"
+    local usage="Usage: xdg_default <-m mime-type|-f file-to-open> -a handler.desktop"
 
     # Loop through the arguments.
     for arg in "$@"
@@ -990,6 +990,12 @@ function xdg_default()
     fi
 
     printf "\e[1mSetting default application for\e[m \e[32m'%s'\e[m to \e[36m'%s'\e[m...\n" $mime $app
+
+    # Create the necessary directory to avoid an error.
+    if [[ ! -d $XDG_DATA_HOME/applications ]]
+    then
+        mkdir -p $XDG_DATA_HOME/applications
+    fi
 
     # Set the default application.
     xdg-mime default "${app}" "${mime}"
