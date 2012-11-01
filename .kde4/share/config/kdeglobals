@@ -91,6 +91,10 @@ ForegroundNormal=210,210,210
 ForegroundPositive=210,210,210
 ForegroundVisited=135,92,141
 
+[DirSelect Dialog]
+DirSelectDialog Size=791,576
+History Items[$e]=file://$HOME/Music
+
 [General]
 ColorScheme=dark
 shadeSortColumn=true

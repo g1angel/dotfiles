@@ -21,6 +21,7 @@ xset r rate 245 30
 
 # Turn off screen blanking
 xset s off
+xset s noblank
 
 # Setup uim input support
 #export GTK_IM_MODULE='uim'
