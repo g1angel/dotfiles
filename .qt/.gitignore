@@ -1,2 +1,4 @@
 # Include everything
 !*
+# except
+qt_plugins_3.3rc
