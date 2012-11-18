@@ -10,7 +10,7 @@ export NODE_PATH=$NODE_PATH:/usr/lib/node_modules/npm/node_modules/
 # configure clang
 export CC=clang
 export CFLAGS="-ggdb -O0 -std=c99 -Wall -Werror"
-export LDLIBS="-lcs50 -lm"
+export LDLIBS="-lcs50 -lm -lcrypt"
 
 # protect user
 alias cp="cp -i"
