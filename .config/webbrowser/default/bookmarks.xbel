@@ -896,6 +896,21 @@
 <title>SPICE - KVM</title>
 </bookmark>
 </folder>
+<folder>
+<title>hard_drive_issues</title>
+<bookmark href="http://www.mitbbs.com/article_t/Linux/31210709.html">
+<title>How to fix bad sectors on HD - 未名空间(mitbbs.com)</title>
+</bookmark>
+<bookmark href="http://niki.hammler.net/wiki/Device:_/dev/sda,_1_Currently_unreadable_(pending)_sectors">
+<title>Device: /dev/sda, 1 Currently unreadable (pending) sectors – NOBAQ</title>
+</bookmark>
+<bookmark href="http://serverfault.com/questions/104417/how-do-i-easily-repair-a-single-unreadable-block-on-a-linux-disk">
+<title>How do I easily repair a single unreadable block on a Linux disk? - Server Fault</title>
+</bookmark>
+</folder>
+<bookmark href="http://wiki.gilug.org/index.php/How_to_mount_SFTP_accesses">
+<title>How to mount SFTP accesses - GiLUG</title>
+</bookmark>
 </folder>
 <folder>
 <title>lockpicking</title>
