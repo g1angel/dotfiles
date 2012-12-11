@@ -5,73 +5,86 @@ globals = {
  -- homepage            = "http://github.com/mason-larobina/luakit",
     scroll_step         = 40,
     zoom_step           = 0.1,
-    max_cmd_history     = 100,
-    max_srch_history    = 100,
-    --http_proxy          = "http://127.0.0.1:8118",
-    download_dir        = luakit.get_special_dir("DOWNLOAD") or (os.getenv("HOME") .. "/downloads"),
-    default_window_size = "1000x600",
+    max_cmd_history     = 0,
+    max_srch_history    = 0,
+ -- http_proxy          = "http://localhost:8118",
+    default_window_size = "1218x529",
+
+ -- Disables loading of hostnames from /etc/hosts (for large host files)
+ -- load_etc_hosts      = false,
+ -- Disables checking if a filepath exists in search_open function
+ -- check_filepath      = false,
 }
 
 -- Make useragent
-local arch = string.match(({luakit.spawn_sync("uname -sm")})[2], "([^\n]*)")
---local lkv  = string.format("luakit/%s", luakit.version)
-local lkv  = "Safari/531.2+"
-local wkv  = string.format("WebKitGTK+/%d.%d.%d", luakit.webkit_major_version, luakit.webkit_minor_version, luakit.webkit_micro_version)
-local awkv = string.format("AppleWebKit/%s.%s+", luakit.webkit_user_agent_major_version, luakit.webkit_user_agent_minor_version)
-globals.useragent = string.format("Mozilla/5.0 (X11; U; %s; en-us) %s %s %s", arch, awkv, wkv, lkv)
-globals.useragent = "Mozilla/5.0 (X11; U; Linux i686; en-us) AppleWebKit/531.2+ (KHTML, like Gecko) Safari/531.2+"
+local _, arch = luakit.spawn_sync("uname -sm")
+-- Only use the luakit version if in date format (reduces identifiability)
+local lkv = string.match(luakit.version, "^(%d+.%d+.%d+)")
+globals.useragent = string.format("Mozilla/5.0 (%s) AppleWebKit/%s+ (KHTML, like Gecko) WebKitGTK+/%s luakit%s",
+    string.sub(arch, 1, -2), luakit.webkit_user_agent_version,
+    luakit.webkit_version, (lkv and ("/" .. lkv)) or "")
+
 -- Search common locations for a ca file which is used for ssl connection validation.
-local ca_files = {luakit.data_dir .. "/ca-certificates.crt",
-    "/etc/certs/ca-certificates.crt", "/etc/ssl/certs/ca-certificates.crt",}
+local ca_files = {
+    -- $XDG_DATA_HOME/luakit/ca-certificates.crt
+    luakit.data_dir .. "/ca-certificates.crt",
+    "/etc/certs/ca-certificates.crt",
+    "/etc/ssl/certs/ca-certificates.crt",
+}
+-- Use the first ca-file found
 for _, ca_file in ipairs(ca_files) do
     if os.exists(ca_file) then
-        globals.ca_file = ca_file
+        soup.ssl_ca_file = ca_file
         break
     end
 end
 
 -- Change to stop navigation sites with invalid or expired ssl certificates
-globals.ssl_strict = false
+soup.ssl_strict = true
 
--- Search engines
+-- Set cookie acceptance policy
+cookie_policy = { always = 0, never = 1, no_third_party = 2 }
+soup.accept_policy = cookie_policy.no_third_party
+
+-- List of search engines. Each item must contain a single %s which is
+-- replaced by URI encoded search terms. All other occurances of the percent
+-- character (%) may need to be escaped by placing another % before or after
+-- it to avoid collisions with lua's string.format characters.
+-- See: http://www.lua.org/manual/5.1/manual.html#pdf-string.format
 search_engines = {
-    luakit      = "http://luakit.org/search/index/luakit?q={0}",
-    google      = "http://google.com/search?q={0}",
-    duckduckgo  = "http://duckduckgo.com/?q={0}",
-    wikipedia   = "http://en.wikipedia.org/wiki/Special:Search?search={0}",
-    debbugs     = "http://bugs.debian.org/{0}",
-    imdb        = "http://imdb.com/find?s=all&q={0}",
-    sourceforge = "http://sf.net/search/?words={0}",
+    duckduckgo  = "https://duckduckgo.com/?q=%s",
+    github      = "https://github.com/search?q=%s",
+    google      = "https://google.com/search?q=%s",
+    imdb        = "http://www.imdb.com/find?s=all&q=%s",
+    wikipedia   = "https://en.wikipedia.org/wiki/Special:Search?search=%s",
+    startpage   = "https://startpage.com/do/search?query=%s",
 }
 
 -- Set google as fallback search engine
-search_engines.default = search_engines.google
-
--- Fake the cookie policy enum here
-cookie_policy = { always = 0, never = 1, no_third_party = 2 }
+search_engines.default = search_engines.startpage
+-- Use this instead to disable auto-searching
+--search_engines.default = "%s"
 
 -- Per-domain webview properties
-domain_props = { 
+-- See http://webkitgtk.org/reference/webkitgtk/stable/WebKitWebSettings.html
+domain_props = {
     ["all"] = {
-        ["user-stylesheet-uri"] = "file:///home/josiah/.config/webbrowser/styles/dark.css",
+        user_stylesheet_uri = "file:///home/josiah/.config/webbrowser/styles/dark.css",
+        enable_private_browsing = true,
     }, --[[
     ["all"] = {
-        ["enable-scripts"]          = false,
-        ["enable-plugins"]          = false,
-        ["enable-private-browsing"] = false,
-        ["user-stylesheet-uri"]     = "",
-        ["accept-policy"]           = cookie_policy.never,
+        enable_scripts          = false,
+        enable_plugins          = false,
+        enable_private_browsing = false,
+        user_stylesheet_uri     = "",
     },
     ["youtube.com"] = {
-        ["enable-scripts"] = true,
-        ["enable-plugins"] = true,
+        enable_scripts = true,
+        enable_plugins = true,
     },
-    ["lwn.net"] = {
-       ["accept-policy"] = cookie_policy.no_third_party,
-    },
-    ["forums.archlinux.org"] = {
-        ["user-stylesheet-uri"]     = luakit.data_dir .. "/styles/dark.css",
-        ["enable-private-browsing"] = true,
+    ["bbs.archlinux.org"] = {
+        user_stylesheet_uri     = "file://" .. luakit.data_dir .. "/styles/dark.css",
+        enable_private_browsing = true,
     }, ]]
 }
 
