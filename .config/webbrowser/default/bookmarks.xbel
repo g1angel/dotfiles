@@ -911,6 +911,9 @@
 <bookmark href="http://wiki.gilug.org/index.php/How_to_mount_SFTP_accesses">
 <title>How to mount SFTP accesses - GiLUG</title>
 </bookmark>
+<bookmark href="http://www.linuxhomenetworking.com/wiki/index.php/Quick_HOWTO_:_Ch04_:_Simple_Network_Troubleshooting#.UMiYHRSVuhc">
+<title>http://www.linuxhomenetworking.com/wiki/index.php/Quick_HOWTO_:_Ch04_:_Simple_Network_Troubleshooting#.UMiYHRSVuhc</title>
+</bookmark>
 </folder>
 <folder>
 <title>lockpicking</title>
@@ -1074,6 +1077,9 @@
 <title>c</title>
 <bookmark href="http://www.linuxprogrammingblog.com/linux">
 <title>Linux Programming | Linux Programming Blog</title>
+</bookmark>
+<bookmark href="http://www.muppetlabs.com/~breadbox/software/tiny/teensy.html">
+<title>A Whirlwind Tutorial on Creating Really Teensy ELF Executables for Linux</title>
 </bookmark>
 </folder>
 <folder>
@@ -1387,6 +1393,9 @@
 </bookmark>
 <bookmark href="http://visopsys.org/osdev/index.php">
 <title>Visopsys | Visual Operating System | OS Development</title>
+</bookmark>
+<bookmark href="http://www.eecs.berkeley.edu/~rcs/research/interactive_latency.html">
+<title>Numbers Every Programmer Should Know By Year</title>
 </bookmark>
 </folder>
 <folder>
@@ -1707,6 +1716,9 @@
 </bookmark>
 <bookmark href="http://hashcat.net/oclhashcat-plus/">
 <title>oclHashcat-plus - advanced password recovery</title>
+</bookmark>
+<bookmark href="http://average-coder.blogspot.com.ar/2012/02/linux-terminal-keylogger.html">
+<title>Average coder: Linux terminal keylogger in userspace</title>
 </bookmark>
 </folder>
 <folder>
@@ -2885,6 +2897,9 @@
 <bookmark href="http://web4.cs.ucl.ac.uk/staff/D.Barber/pmwiki/pmwiki.php?n=Brml.HomePage?from=Main.Textbook">
 <title>David Barber : Brml - Home Page browse</title>
 </bookmark>
+<bookmark href="http://www.p-value.info/2012/11/free-datascience-books.html">
+<title>p-value.info: Free Datascience books</title>
+</bookmark>
 </folder>
 <folder>
 <title>logic</title>
@@ -3081,6 +3096,9 @@
 <title>Music Theory for Musicians and Normal People</title>
 </bookmark>
 </folder>
+<bookmark href="http://schoolofdata.org/">
+<title>School of Data - Learn how to find, process, analyze and visualize data</title>
+</bookmark>
 </folder>
 <bookmark href="http://serverfault.com/questions/403732/anyone-else-experiencing-high-rates-of-linux-server-crashes-during-a-leap-second">
 <title>debian - Anyone else experiencing high rates of Linux server crashes during a leap second day? - Server Fault</title>
