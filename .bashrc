@@ -123,8 +123,9 @@ alias cp='cp -iv'
 alias mv='mv -iv'
 
 # Mplayer aliases for playing movies in the console framebuffer.
-alias fbmp='mplayer -really-quiet -vo fbdev -fs'
-alias fbmpfs='mplayer -really-quiet -vo fbdev -fs -zoom -xy 1600'
+alias fbmp='mplayer -really-quiet -vo fbdev2 -fs'
+width=$(fbset | sed -n 's/mode "\([[:digit:]]*\)x[[:digit:]]*"/\1/gp')
+alias fbmpfs="mplayer -really-quiet -vo fbdev2 -fs -zoom -xy ${width}"
 
 # Dtach aliases for dvtm and bash.
 alias ddvtm='dtach -c /tmp/dvtm-session -r winch dvtm'
