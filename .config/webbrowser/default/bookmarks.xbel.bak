@@ -1078,6 +1078,9 @@
 <bookmark href="http://www.linuxprogrammingblog.com/linux">
 <title>Linux Programming | Linux Programming Blog</title>
 </bookmark>
+<bookmark href="http://www.muppetlabs.com/~breadbox/software/tiny/teensy.html">
+<title>A Whirlwind Tutorial on Creating Really Teensy ELF Executables for Linux</title>
+</bookmark>
 </folder>
 <folder>
 <title>python ctypes</title>
@@ -3044,6 +3047,12 @@
 <bookmark href="http://www.zappable.com/2012/11/chart-for-learning-a-programming-langauge/">
 <title>Chart for Learning a Programming Langauge | Zappable</title>
 </bookmark>
+<folder>
+<title>haskell</title>
+<bookmark href="http://shuklan.com/haskell/">
+<title>Haskell Lectures - CS 1501</title>
+</bookmark>
+</folder>
 </folder>
 <bookmark href="http://www.reddit.com/r/AskReddit/comments/tmtd4/what_are_the_most_intellectually_stimulating/">
 <title>What are the most intellectually stimulating websites you know of? I'll start. : AskReddit</title>
