@@ -18,5 +18,6 @@
     "startpage": "https://startpage.com/do/search?query=%s",
     "google translate": "http://translate.google.com/translate?u=%s",
     "hacker news": "http://www.hnsearch.com/search#request/all&q=%s",
-    "google plus": "https://plus.google.com/s/%s"
+    "google plus": "https://plus.google.com/s/%s",
+    "google translate uri": "http://translate.google.com/translate?u=%s&hl=en&langpair=auto|en&tbb=1&ie=UTF-8"
 }

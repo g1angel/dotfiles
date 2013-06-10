@@ -168,6 +168,9 @@
 <title>Good Freely Available Textbooks on Machine Learning - MetaOptimize Q+A</title>
 </bookmark>
 </folder>
+<bookmark href="http://hackershelf.com/browse/">
+<title>The Hacker Shelf | Community-curated collection of free books for the intellectually curious.</title>
+</bookmark>
 </folder>
 <folder>
 <title>cassete belt</title>
@@ -829,6 +832,9 @@
 <bookmark href="https://santoku-linux.com/">
 <title>Santoku-Linux</title>
 </bookmark>
+<bookmark href="http://www.maui-project.org/">
+<title>Home -maui</title>
+</bookmark>
 </folder>
 <bookmark href="http://www.linuxaria.com/howto/policy-routing-linux-iproute2?lang=en">
 <title>Linuxaria Policy Routing with Linux : Linuxaria</title>
@@ -852,6 +858,12 @@
 </bookmark>
 <bookmark href="http://repo-ck.com/">
 <title>Repo-CK</title>
+</bookmark>
+<bookmark href="http://arm.konnichi.com/">
+<title>rollback machine Index of /</title>
+</bookmark>
+<bookmark href="http://gotux.net/arch-linux/arch-linux-2013-installation/">
+<title>GoTux.net | Arch Linux 2013 Installation</title>
 </bookmark>
 </folder>
 <bookmark href="http://blog.falconindy.com/articles/build-a-virtual-army.html">
@@ -913,6 +925,9 @@
 </bookmark>
 <bookmark href="http://www.linuxhomenetworking.com/wiki/index.php/Quick_HOWTO_:_Ch04_:_Simple_Network_Troubleshooting#.UMiYHRSVuhc">
 <title>http://www.linuxhomenetworking.com/wiki/index.php/Quick_HOWTO_:_Ch04_:_Simple_Network_Troubleshooting#.UMiYHRSVuhc</title>
+</bookmark>
+<bookmark href="http://www.noah.org/wiki/Kill_-9_does_not_work">
+<title>Kill -9 does not work - Noah.org</title>
 </bookmark>
 </folder>
 <folder>
@@ -1065,6 +1080,9 @@
 </bookmark>
 <bookmark href="http://acm.wustl.edu/functional/haskell.php">
 <title>How to learn Haskell</title>
+</bookmark>
+<bookmark href="http://fpcomplete.com/school-of-haskell-goes-beta/">
+<title>School of Haskell Goes Beta | FP Complete</title>
 </bookmark>
 </folder>
 <folder>
@@ -1231,6 +1249,15 @@
 <bookmark href="http://blog.sanctum.geek.nz/advanced-vim-macros/">
 <title>Advanced Vim macros | Arabesque</title>
 </bookmark>
+<bookmark href="https://github.com/Valloric/YouCompleteMe">
+<title>Valloric/YouCompleteMe · GitHub</title>
+</bookmark>
+<bookmark href="http://statico.github.com/vim2.html">
+<title>Everything I Missed in "Vim After 11 Years" - Ian Langworth's Things of Variable Interest</title>
+</bookmark>
+<bookmark href="http://vim-scripts.org/">
+<title>Vim Scripts</title>
+</bookmark>
 </folder>
 <folder>
 <title>opa cloud language</title>
@@ -1367,12 +1394,6 @@
 <title>PythonBooks - Learn Python the easy way !</title>
 </bookmark>
 </folder>
-<folder>
-<title>javascript</title>
-<bookmark href="http://www.nodebeginner.org/">
-<title>The Node Beginner Book » A comprehensive Node.js tutorial</title>
-</bookmark>
-</folder>
 <bookmark href="http://www.altdevblogaday.com/2011/08/06/demise-low-level-programmer/">
 <title>#AltDevBlogADay » The demise of the low level Programmer.</title>
 </bookmark>
@@ -1396,6 +1417,105 @@
 </bookmark>
 <bookmark href="http://www.eecs.berkeley.edu/~rcs/research/interactive_latency.html">
 <title>Numbers Every Programmer Should Know By Year</title>
+</bookmark>
+<folder>
+<title>webdev</title>
+<bookmark href="http://twitter.github.com/bootstrap/examples/fluid.html">
+<title>Bootstrap, from Twitter</title>
+</bookmark>
+<bookmark href="https://github.com/twitter/bootstrap/tree/51e4e77034e14074cb442138e84b98efd288ccfd">
+<title>twitter/bootstrap at 51e4e77034e14074cb442138e84b98efd288ccfd · GitHub</title>
+</bookmark>
+<bookmark href="http://gettingstartedwithdjango.com/en/lessons/introduction-and-launch/">
+<title>Introduction and Launch | Lessons | Getting Started with Django</title>
+</bookmark>
+<bookmark href="http://html5boilerplate.com/">
+<title>HTML5 Boilerplate: The web's most popular front-end template</title>
+</bookmark>
+<bookmark href="http://css-tricks.com/custom-scrollbars-in-webkit/">
+<title>Custom Scrollbars in WebKit | CSS-Tricks</title>
+</bookmark>
+<bookmark href="http://manos.malihu.gr/jquery-custom-content-scroller/">
+<title>jQuery custom content scroller – malihu | web design</title>
+</bookmark>
+<folder>
+<title>jinja</title>
+<bookmark href="http://jinja.pocoo.org/docs/templates/#base-template">
+<title>Template Designer Documentation — Jinja2 2.7-dev documentation</title>
+</bookmark>
+<bookmark href="http://jinja.pocoo.org/docs/templates/">
+<title>Template Designer Documentation — Jinja2 2.7-dev documentation</title>
+</bookmark>
+</folder>
+<folder>
+<title>javascript</title>
+<bookmark href="http://www.nodebeginner.org/">
+<title>The Node Beginner Book » A comprehensive Node.js tutorial</title>
+</bookmark>
+<bookmark href="http://zeptojs.com/">
+<title>Zepto.js: the aerogel-weight jQuery-compatible JavaScript library</title>
+</bookmark>
+<bookmark href="http://jsfiddle.net/gBdMf/1/">
+<title>Edit this Fiddle - jsFiddle</title>
+</bookmark>
+<bookmark href="http://api.jquery.com/click/">
+<title>.click() | jQuery API Documentation</title>
+</bookmark>
+<bookmark href="http://api.jquery.com/">
+<title>jQuery API Documentation</title>
+</bookmark>
+<bookmark href="https://developers.google.com/speed/libraries/devguide#jquery">
+<title>https://developers.google.com/speed/libraries/devguide#jquery</title>
+</bookmark>
+<bookmark href="https://developer.mozilla.org/en-US/docs/JavaScript/Guide/Regular_Expressions">
+<title>Regular Expressions - JavaScript | MDN</title>
+</bookmark>
+<bookmark href="http://goldfirestudios.com/blog/104/howler.js-Modern-Web-Audio-Javascript-Library">
+<title>howler.js - Modern Web Audio Javascript Library - GoldFire Studios</title>
+</bookmark>
+<bookmark href="http://www.meteor.com/main">
+<title>http://www.meteor.com/main</title>
+</bookmark>
+</folder>
+<bookmark href="http://a5.gg/">
+<title>a5 webstorage example</title>
+</bookmark>
+<bookmark href="http://modernizr.com/">
+<title>Modernizr: the feature detection library for HTML5/CSS3</title>
+</bookmark>
+<bookmark href="http://www.simonbingham.me.uk/index.cfm/main/post/uuid/using-html5-local-storage-and-jquery-to-persist-form-data-47">
+<title>Using HTML5 local storage and jQuery to persist form data</title>
+</bookmark>
+<bookmark href="https://developers.google.com/speed/articles/include-scripts-properly">
+<title>Properly including stylesheets and scripts - Make the Web Faster — Google Developers</title>
+</bookmark>
+<bookmark href="https://developers.google.com/speed/docs/best-practices/rtt">
+<title>Minimize round-trip times - Make the Web Faster — Google Developers</title>
+</bookmark>
+<folder>
+<title>css</title>
+<bookmark href="http://inuitcss.com/">
+<title>Home – inuit.css – a powerful, scalable, Sass-based, BEM, OOCSS framework</title>
+</bookmark>
+</folder>
+<folder>
+<title>python host</title>
+<bookmark href="https://www.pythonanywhere.com/pricing/">
+<title>Plans and pricing : PythonAnywhere</title>
+</bookmark>
+</folder>
+<bookmark href="http://docs.gameclosure.com/">
+<title>Game Closure DevKit Documentation</title>
+</bookmark>
+<bookmark href="http://validator.w3.org/">
+<title>The W3C Markup Validation Service</title>
+</bookmark>
+<bookmark href="http://groundwork.sidereel.com/?url=typography">
+<title>http://groundwork.sidereel.com/?url=typography</title>
+</bookmark>
+</folder>
+<bookmark href="http://snap.berkeley.edu/snapsource/snap.html">
+<title>Snap! Build Your Own Blocks. Beta</title>
 </bookmark>
 </folder>
 <folder>
@@ -1720,6 +1840,9 @@
 <bookmark href="http://average-coder.blogspot.com.ar/2012/02/linux-terminal-keylogger.html">
 <title>Average coder: Linux terminal keylogger in userspace</title>
 </bookmark>
+<bookmark href="https://www.pentesterlab.com/">
+<title>PentesterLab.com</title>
+</bookmark>
 </folder>
 <folder>
 <title>unicode</title>
@@ -1971,6 +2094,21 @@
 <bookmark href="http://www.metafilter.com/114704/Demoscene-The-Art-of-the-Algorithms">
 <title>Demoscene - The Art of the Algorithms | MetaFilter</title>
 </bookmark>
+<bookmark href="http://www.anime-mp3.com/">
+<title>♪Your Anime Music Source♪</title>
+</bookmark>
+<bookmark href="http://www.filecrop.com/sheet-music-piano-joe-hisaishi.html">
+<title>Sheet Music Piano Joe Hisaishi - Download</title>
+</bookmark>
+<bookmark href="http://www.mp3olimp.net/michiko-to-hatchin/">
+<title>Michiko to hatchin free mp3 download</title>
+</bookmark>
+<bookmark href="http://www.sky-animes.com/">
+<title>SkY-AnimeS - Télécharger Manga Anime Drama OST ...</title>
+</bookmark>
+<bookmark href="http://radio.sky-animes.com/">
+<title>SkY-AniMeS - Night Wizard The Animation OP Single - KURENAI</title>
+</bookmark>
 </folder>
 <bookmark href="http://www.penguspy.com/#/All/free/sort=1/view=1/limit=0">
 <title>Recently added free Linux games on Penguspy</title>
@@ -2164,6 +2302,57 @@
 </bookmark>
 <bookmark href="http://www.lgdb.org/">
 <title>Linux game database | Database for native Linux games</title>
+</bookmark>
+<folder>
+<title>visual novels</title>
+<bookmark href="http://fuwanovel.org/">
+<title>Fuwanovel</title>
+</bookmark>
+<bookmark href="http://nvlist.weeaboo.nl/">
+<title>NVList</title>
+</bookmark>
+<bookmark href="http://atpprojects.wordpress.com/original22/">
+<title>“Original 22″ « ATP Projects</title>
+</bookmark>
+<bookmark href="http://alengard666.wix.com/ads64#!games/c1x9v">
+<title>http://alengard666.wix.com/ads64#!games/c1x9v</title>
+</bookmark>
+<bookmark href="http://gmc.yoyogames.com/index.php?showtopic=555467">
+<title>DarkVN, the GM visual novel engine - Game Maker Community</title>
+</bookmark>
+<bookmark href="http://vndb.org/">
+<title>The Visual Novel Database</title>
+</bookmark>
+<bookmark href="http://twinturtlegames.com/games/thats-the-way-the-cookie-crumbles/">
+<title>That’s the Way the Cookie Crumbles » TwinTurtle Games</title>
+</bookmark>
+<bookmark href="http://kirime.geekpink.com/onigami/">
+<title>The Onigami House | Team Kirime</title>
+</bookmark>
+</folder>
+<bookmark href="http://taw.chaosforge.org/jrpg/#download">
+<title>jrpg kanji</title>
+</bookmark>
+<folder>
+<title>rpg</title>
+<bookmark href="https://easy-rpg.org/blog/">
+<title>EasyRPG Blog | EasyRPG development news</title>
+</bookmark>
+<bookmark href="http://www.rpgrevolution.com/games.html">
+<title>Games - RPG RPG Revolution</title>
+</bookmark>
+<bookmark href="http://valyriatear.blogspot.fr/">
+<title>Valyria Tear</title>
+</bookmark>
+</folder>
+<bookmark href="http://freegamer.blogspot.com/">
+<title>Free Gamer - Open Source Games</title>
+</bookmark>
+<bookmark href="http://gimcrackd.com/">
+<title>Gimcrack'd</title>
+</bookmark>
+<bookmark href="http://freegamer.blogspot.de/">
+<title>Free Gamer - Open Source Games</title>
 </bookmark>
 </folder>
 </folder>
@@ -3014,6 +3203,9 @@
 <bookmark href="http://linear.ups.edu/">
 <title>A First Course in Linear Algebra (A Free Textbook)</title>
 </bookmark>
+<bookmark href="http://www.magicalmaths.org/how-japanese-kids-learn-to-multiply/">
+<title>Magical Maths « How Japanese Kids Learn To Multiply – Amazing, No Need to Learn Japanese</title>
+</bookmark>
 </folder>
 <bookmark href="http://www.academicearth.org/">
 <title>Free Online Classes | Online Learning | Academic Earth</title>
@@ -3045,6 +3237,9 @@
 <title>html and css</title>
 <bookmark href="http://html5.instructormatters.com/0.3/">
 <title>HTML5 and CSS3 ‐ Index</title>
+</bookmark>
+<bookmark href="http://www.w3schools.com/cssref/pr_dim_max-height.asp">
+<title>CSS max-height property</title>
 </bookmark>
 </folder>
 <bookmark href="http://www.zappable.com/2012/11/chart-for-learning-a-programming-langauge/">
@@ -3107,6 +3302,9 @@
 </folder>
 <bookmark href="http://schoolofdata.org/">
 <title>School of Data - Learn how to find, process, analyze and visualize data</title>
+</bookmark>
+<bookmark href="http://www.hackertalks.io/">
+<title>Hacker Talks - Expert Curated Lists of the best Tech Talks.</title>
 </bookmark>
 </folder>
 <bookmark href="http://serverfault.com/questions/403732/anyone-else-experiencing-high-rates-of-linux-server-crashes-during-a-leap-second">
@@ -3424,4 +3622,7 @@
 <title>Escape OTR - Free Old Time Radio Shows - Download OTR Shows MP3's</title>
 </bookmark>
 </folder>
+<bookmark href="http://www.flickeringmyth.com/2010/05/drawn-to-anime-hayao-miyazaki-profile.html">
+<title>Drawn to Anime: A Hayao Miyazaki Profile (Part 1) | Flickering Myth</title>
+</bookmark>
 </xbel>

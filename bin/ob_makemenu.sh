@@ -27,5 +27,5 @@ echo '		<separator label="OpenBox"/>
 	</menu> 
 </openbox_menu>' >> $MENU_XML
 sed -i 's/pasuspender//g' $MENU_XML
-sed -i 's_firefox_'$HOME'/bin/multifox_g' $MENU_XML
+sed -i 's_/usr/lib/firefox/firefox_'$HOME'/bin/multifox_g' $MENU_XML
 openbox --reconfigure

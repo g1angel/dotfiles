@@ -12,11 +12,12 @@
 !bin
 !.cdw.conf
 !.cmus
-!.config
+# !.config
 !.conkyrc
 !.conkyrc-lxde
 !.conkyrc-lxde.bak
 !.conkyrc-openbox
+!.conkyrc-openbox-wide
 !.conkyrc-pekwm
 !.dir_colors
 !.dir_colors.fbterm
@@ -39,8 +40,8 @@
 !.hydrogen
 !.inputrc
 !.irbrc
-!.kde4
-!.local
+# !.kde4
+# !.local
 !.lynxrc
 !.makepkg.conf
 !.midisettings.cfg
