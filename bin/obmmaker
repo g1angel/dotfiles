@@ -1,5 +1,0 @@
-#!/bin/bash
-
-echo '<openbox_pipe_menu>'
-mmaker -fciv OpenBox3 #| sed '/<menu/d;/<\/menu/d'
-echo '</openbox_pipe_menu>'
