@@ -1,0 +1,3 @@
+#!/usr/bin/bash
+
+opencma -p /mnt/stuff/Vita/Pictures/ -v /mnt/stuff/Vita/Movies/ -m /mnt/stuff/Vita/Music/ -a /mnt/stuff/Vita/Apps/ -l 4

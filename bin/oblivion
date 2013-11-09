@@ -1,0 +1,2 @@
+#!/usr/bin/bash
+WINEDEBUG=-all WINEDLLOVERRIDES=quartz,devenum=n WINEPREFIX=~/.wine32 WINEARCH=win32 wine ~/.wine32/drive_c/Program\ Files/Steam/Steam.exe -tcp steam://rungameid/22330

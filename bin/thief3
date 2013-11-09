@@ -1,0 +1,7 @@
+#!/usr/bin/bash
+pushd /mnt/stuff/thiefwine32/drive_c/Program\ Files/Steam/SteamApps/common/Thief\ Deadly\ Shadows/System
+# WINEDEBUG=-all WINEDLLOVERRIDES=quartz,devenum=n WINEPREFIX=/mnt/stuff/thiefwine32 WINEARCH=win32 regsvr32 LGVID.AX
+WINEDEBUG=-all WINEDLLOVERRIDES=quartz,devenum=n WINEPREFIX=/mnt/stuff/thiefwine32 WINEARCH=win32 wine T3Main.exe
+popd
+
+# WINEDEBUG=-all WINEDLLOVERRIDES=quartz,devenum=n WINEPREFIX=/mnt/stuff/thiefwine32 WINEARCH=win32 wine /mnt/stuff/thiefwine32/drive_c/Program\ Files/Steam/Steam.exe steam://rungameid/211600
