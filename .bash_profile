@@ -9,4 +9,4 @@ then
 fi
 
 # Load RVM into a shell session *as a function*
-[[ -s "/home/josiah/.rvm/scripts/rvm" ]] && source "/home/josiah/.rvm/scripts/rvm"
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"

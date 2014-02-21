@@ -1,2 +1,0 @@
-#!/usr/bin/bash
-WINEDEBUG=-all WINEDLLOVERRIDES=quartz,devenum=n WINEPREFIX=/mnt/games/elderscrolls WINEARCH=win32 wine /mnt/games/elderscrolls/drive_c/Program\ Files/Steam/Steam.exe -tcp steam://rungameid/72850

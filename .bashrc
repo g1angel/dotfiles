@@ -34,7 +34,7 @@ BASH_DIR=$HOME/.bashrc.d
 # Load user defined functions
 source $BASH_DIR/functions.sh
 
-# Only set colors if where not root.
+# Only set colors if we're not root.
 if [[ $UID != 0 ]]; then
     # Setup the terminal colors
     setup_colors

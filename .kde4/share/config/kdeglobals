@@ -93,7 +93,7 @@ ForegroundVisited=135,92,141
 
 [DirSelect Dialog]
 DirSelectDialog Size=791,576
-History Items[$e]=file:///mnt/stuff/Vita/Web,file:///mnt/stuff/Vita/Apps,file:///mnt/stuff/Vita/Music,file:///mnt/stuff/Vita/Movies,file:///mnt/stuff/Vita/Pictures,file://$HOME/Music
+History Items[$e]=file://$HOME/Music/Games,file://$HOME/Music,file://$HOME/Music/Bravely Default,file://$HOME/Music/Ys OST,file:///mnt/stuff/Vita/Web,file:///mnt/stuff/Vita/Apps,file:///mnt/stuff/Vita/Music,file:///mnt/stuff/Vita/Movies,file:///mnt/stuff/Vita/Pictures
 
 [General]
 ColorScheme=dark
@@ -118,7 +118,7 @@ Show hidden files=false
 Sort by=Name
 Sort directories first=true
 Sort reversed=false
-Speedbar Width=97
+Speedbar Width=101
 View Style=Simple
 listViewIconSize=0
 

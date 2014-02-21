@@ -1,2 +1,6 @@
-# Include everything
-!*
+# Ignore everything
+*
+# Except
+.gitignore
+dark.theme
+light.theme
