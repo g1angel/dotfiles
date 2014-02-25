@@ -65,18 +65,18 @@ def main(args: dict) -> None:
     # not.
     quit_val = True
 
-    quality = args['quality'] / 10 if args['quality'] in range(1, 10) else 5
+    quality = args['quality'] / 10 if args['quality'] in range(-1, 11) else 0.5
 
-    with open_file(**args) as in_file:
-        with open_file(output, 'w', depth=in_file.depth, rate=in_file.rate,
-                       channels=in_file.channels, quality=quality) as out_file:
-            in_file.loops = 0
+    try:
+        with open_file(**args) as in_file:
+            with open_file(output, 'w', depth=in_file.depth, rate=in_file.rate,
+                        channels=in_file.channels, quality=quality) as out_file:
+                in_file.loops = 0
 
-            if args['show_position']:
-                print("Encoding: %s to %s" % (filename, output))
-                print(in_file)
+                if args['show_position']:
+                    print("Encoding: %s to %s" % (filename, output))
+                    print(in_file)
 
-            try:
                 for data in in_file:
                     if args['show_position']:
                         if in_file.length > 0:
@@ -108,11 +108,12 @@ def main(args: dict) -> None:
                         elif command == '\n':
                             break
 
-            except Exception as err:
-                print("Error: %s" % err, flush=True)
-            finally:
-                # Re-set the terminal state.
-                tcsetattr(sys_stdin, TCSANOW, normal)
+    except Exception as err:
+        print("Error: %s" % err, flush=True)
+        raise(err)
+    finally:
+        # Re-set the terminal state.
+        tcsetattr(sys_stdin, TCSANOW, normal)
 
     if args['show_position']:
         print("\nDone.")
@@ -124,7 +125,7 @@ if __name__ == '__main__':
     from argparse import ArgumentParser
     parser = ArgumentParser(description="Musio vorbis encoder")
     parser.add_argument('-e', '--quality', action='store', default=5, type=int,
-                        help='Encoding quality (1-9)', dest='quality')
+                        help='Encoding quality (1-10)', dest='quality')
     parser.add_argument('-t', '--track', action='store', default=0, type=int,
                         help='Track to play', dest='track')
     parser.add_argument('-p', '--path', action='store', default=[],
