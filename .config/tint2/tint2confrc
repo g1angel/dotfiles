@@ -1,6 +1,6 @@
 #---------------------------------------------
 # TINT2CONF CONFIG FILE
-default_theme = /home/josiah/.config/tint2/grey.tint2rc
+default_theme = /home/josiah/.config/tint2/dark_grey.tint2rc
 cmd_property = python2 /usr/bin/tintwizard.py
 width = 925
 height = 380

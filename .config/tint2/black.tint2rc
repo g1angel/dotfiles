@@ -6,7 +6,7 @@
 # ID 1
 rounded = 1
 border_width = 2
-background_color = #FFFFFF 27
+background_color = #FFFFFF 24
 border_color = #1793D1 0
 
 # ID 2
@@ -24,8 +24,8 @@ border_color = #FFFFFF 0
 # ID 4
 rounded = 1
 border_width = 1
-background_color = #313131 77
-border_color = #EEEEEE 50
+background_color = #313131 74
+border_color = #EEEEEE 47
 
 # Panel
 panel_monitor = all

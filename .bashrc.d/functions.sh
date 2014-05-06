@@ -39,6 +39,8 @@ function setup_colors()
                 }' "${F_NAME}"
             echo -en "\e]P03b3b3b"
             echo -en "\e]P85d5d5d"
+            # echo -en "\e]P0202326"
+            # echo -en "\e]P8cccccc"
         else
             # Black
             #echo -en "\e]P0292929"

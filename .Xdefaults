@@ -1,6 +1,6 @@
 /* File: .Xresources/.Xdefaults
  * Author: Josiah Gordon
- * Last Modified: February 09, 2013
+ * Last Modified: May 04, 2014
  */
 
 ! Set the X cursor.
@@ -146,6 +146,8 @@ URxvt.keysym.C-S-C:     perl:clipboard:copy
 
 *background:                                #3b3b3b
 *foreground:                                #d2d2d2
+! *background:                                #202326
+! *foreground:                                #cccccc
 !*background:                                #f2f2f2
 !*background:                                #edefe3
 !*foreground:                                #000000
@@ -154,7 +156,8 @@ URxvt.keysym.C-S-C:     perl:clipboard:copy
 !        *color0:                            #3b3b3b
         *color0:                            #292929
 !        *color8:                            #5d5d5d
-        *color8:                            #3d3d3d
+!        *color8:                            #202326
+       *color8:                            #3d3d3d
 ! Red ----------------------------------------------
         *color1:                            #DE6951
         *color9:                            #c56a47
